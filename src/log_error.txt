@@ -1,0 +1,793 @@
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001005dd170 chromedriver + 4477296
+1   chromedriver                        0x0000000100574c18 chromedriver + 4049944
+2   chromedriver                        0x00000001001c6d40 chromedriver + 191808
+3   chromedriver                        0x00000001001b496c chromedriver + 117100
+4   chromedriver                        0x00000001001b413c chromedriver + 115004
+5   chromedriver                        0x00000001001b3790 chromedriver + 112528
+6   chromedriver                        0x00000001001b289c chromedriver + 108700
+7   chromedriver                        0x00000001001b2d38 chromedriver + 109880
+8   chromedriver                        0x00000001001c0220 chromedriver + 164384
+9   chromedriver                        0x00000001001cd2d4 chromedriver + 217812
+10  chromedriver                        0x00000001001b2fdc chromedriver + 110556
+11  chromedriver                        0x00000001001ccf4c chromedriver + 216908
+12  chromedriver                        0x000000010021eb70 chromedriver + 551792
+13  chromedriver                        0x00000001001eaf58 chromedriver + 339800
+14  chromedriver                        0x00000001005b2bd4 chromedriver + 4303828
+15  chromedriver                        0x00000001005b7094 chromedriver + 4321428
+16  chromedriver                        0x00000001005bb600 chromedriver + 4339200
+17  chromedriver                        0x00000001005b7af4 chromedriver + 4324084
+18  chromedriver                        0x000000010059652c chromedriver + 4187436
+19  chromedriver                        0x00000001005cf488 chromedriver + 4420744
+20  chromedriver                        0x00000001005cf5ec chromedriver + 4421100
+21  chromedriver                        0x00000001005e392c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000100a99170 chromedriver + 4477296
+1   chromedriver                        0x0000000100a30c18 chromedriver + 4049944
+2   chromedriver                        0x0000000100682d40 chromedriver + 191808
+3   chromedriver                        0x000000010067096c chromedriver + 117100
+4   chromedriver                        0x000000010067013c chromedriver + 115004
+5   chromedriver                        0x000000010066f790 chromedriver + 112528
+6   chromedriver                        0x000000010066e89c chromedriver + 108700
+7   chromedriver                        0x000000010066ed38 chromedriver + 109880
+8   chromedriver                        0x000000010067c220 chromedriver + 164384
+9   chromedriver                        0x00000001006892d4 chromedriver + 217812
+10  chromedriver                        0x000000010066efdc chromedriver + 110556
+11  chromedriver                        0x0000000100688f4c chromedriver + 216908
+12  chromedriver                        0x00000001006dab70 chromedriver + 551792
+13  chromedriver                        0x00000001006a6f58 chromedriver + 339800
+14  chromedriver                        0x0000000100a6ebd4 chromedriver + 4303828
+15  chromedriver                        0x0000000100a73094 chromedriver + 4321428
+16  chromedriver                        0x0000000100a77600 chromedriver + 4339200
+17  chromedriver                        0x0000000100a73af4 chromedriver + 4324084
+18  chromedriver                        0x0000000100a5252c chromedriver + 4187436
+19  chromedriver                        0x0000000100a8b488 chromedriver + 4420744
+20  chromedriver                        0x0000000100a8b5ec chromedriver + 4421100
+21  chromedriver                        0x0000000100a9f92c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (293, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000102e2d170 chromedriver + 4477296
+1   chromedriver                        0x0000000102dc4c18 chromedriver + 4049944
+2   chromedriver                        0x0000000102a16d40 chromedriver + 191808
+3   chromedriver                        0x0000000102a4bce0 chromedriver + 408800
+4   chromedriver                        0x0000000102a49f28 chromedriver + 401192
+5   chromedriver                        0x0000000102a47d40 chromedriver + 392512
+6   chromedriver                        0x0000000102a46cc8 chromedriver + 388296
+7   chromedriver                        0x0000000102a3c868 chromedriver + 346216
+8   chromedriver                        0x0000000102a3c254 chromedriver + 344660
+9   chromedriver                        0x0000000102a6e85c chromedriver + 551004
+10  chromedriver                        0x0000000102a3af58 chromedriver + 339800
+11  chromedriver                        0x0000000102e02bd4 chromedriver + 4303828
+12  chromedriver                        0x0000000102e07094 chromedriver + 4321428
+13  chromedriver                        0x0000000102e0b600 chromedriver + 4339200
+14  chromedriver                        0x0000000102e07af4 chromedriver + 4324084
+15  chromedriver                        0x0000000102de652c chromedriver + 4187436
+16  chromedriver                        0x0000000102e1f488 chromedriver + 4420744
+17  chromedriver                        0x0000000102e1f5ec chromedriver + 4421100
+18  chromedriver                        0x0000000102e3392c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000104625170 chromedriver + 4477296
+1   chromedriver                        0x00000001045bcc18 chromedriver + 4049944
+2   chromedriver                        0x000000010420ed40 chromedriver + 191808
+3   chromedriver                        0x00000001041fc96c chromedriver + 117100
+4   chromedriver                        0x00000001041fc13c chromedriver + 115004
+5   chromedriver                        0x00000001041fb790 chromedriver + 112528
+6   chromedriver                        0x00000001041fa89c chromedriver + 108700
+7   chromedriver                        0x00000001041fad38 chromedriver + 109880
+8   chromedriver                        0x0000000104208220 chromedriver + 164384
+9   chromedriver                        0x00000001042152d4 chromedriver + 217812
+10  chromedriver                        0x00000001041fafdc chromedriver + 110556
+11  chromedriver                        0x0000000104214f4c chromedriver + 216908
+12  chromedriver                        0x0000000104266b70 chromedriver + 551792
+13  chromedriver                        0x0000000104232f58 chromedriver + 339800
+14  chromedriver                        0x00000001045fabd4 chromedriver + 4303828
+15  chromedriver                        0x00000001045ff094 chromedriver + 4321428
+16  chromedriver                        0x0000000104603600 chromedriver + 4339200
+17  chromedriver                        0x00000001045ffaf4 chromedriver + 4324084
+18  chromedriver                        0x00000001045de52c chromedriver + 4187436
+19  chromedriver                        0x0000000104617488 chromedriver + 4420744
+20  chromedriver                        0x00000001046175ec chromedriver + 4421100
+21  chromedriver                        0x000000010462b92c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x000000010258d170 chromedriver + 4477296
+1   chromedriver                        0x0000000102524c18 chromedriver + 4049944
+2   chromedriver                        0x0000000102176d40 chromedriver + 191808
+3   chromedriver                        0x000000010216496c chromedriver + 117100
+4   chromedriver                        0x000000010216413c chromedriver + 115004
+5   chromedriver                        0x0000000102163790 chromedriver + 112528
+6   chromedriver                        0x000000010216289c chromedriver + 108700
+7   chromedriver                        0x0000000102162d38 chromedriver + 109880
+8   chromedriver                        0x0000000102170220 chromedriver + 164384
+9   chromedriver                        0x000000010217d2d4 chromedriver + 217812
+10  chromedriver                        0x0000000102162fdc chromedriver + 110556
+11  chromedriver                        0x000000010217cf4c chromedriver + 216908
+12  chromedriver                        0x00000001021ceb70 chromedriver + 551792
+13  chromedriver                        0x000000010219af58 chromedriver + 339800
+14  chromedriver                        0x0000000102562bd4 chromedriver + 4303828
+15  chromedriver                        0x0000000102567094 chromedriver + 4321428
+16  chromedriver                        0x000000010256b600 chromedriver + 4339200
+17  chromedriver                        0x0000000102567af4 chromedriver + 4324084
+18  chromedriver                        0x000000010254652c chromedriver + 4187436
+19  chromedriver                        0x000000010257f488 chromedriver + 4420744
+20  chromedriver                        0x000000010257f5ec chromedriver + 4421100
+21  chromedriver                        0x000000010259392c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (317, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000104c65170 chromedriver + 4477296
+1   chromedriver                        0x0000000104bfcc18 chromedriver + 4049944
+2   chromedriver                        0x000000010484ed40 chromedriver + 191808
+3   chromedriver                        0x0000000104883ce0 chromedriver + 408800
+4   chromedriver                        0x0000000104881f28 chromedriver + 401192
+5   chromedriver                        0x000000010487fd40 chromedriver + 392512
+6   chromedriver                        0x000000010487ecc8 chromedriver + 388296
+7   chromedriver                        0x0000000104874868 chromedriver + 346216
+8   chromedriver                        0x0000000104874254 chromedriver + 344660
+9   chromedriver                        0x00000001048a685c chromedriver + 551004
+10  chromedriver                        0x0000000104872f58 chromedriver + 339800
+11  chromedriver                        0x0000000104c3abd4 chromedriver + 4303828
+12  chromedriver                        0x0000000104c3f094 chromedriver + 4321428
+13  chromedriver                        0x0000000104c43600 chromedriver + 4339200
+14  chromedriver                        0x0000000104c3faf4 chromedriver + 4324084
+15  chromedriver                        0x0000000104c1e52c chromedriver + 4187436
+16  chromedriver                        0x0000000104c57488 chromedriver + 4420744
+17  chromedriver                        0x0000000104c575ec chromedriver + 4421100
+18  chromedriver                        0x0000000104c6b92c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (305, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000104cad170 chromedriver + 4477296
+1   chromedriver                        0x0000000104c44c18 chromedriver + 4049944
+2   chromedriver                        0x0000000104896d40 chromedriver + 191808
+3   chromedriver                        0x00000001048cbce0 chromedriver + 408800
+4   chromedriver                        0x00000001048c9f28 chromedriver + 401192
+5   chromedriver                        0x00000001048c7d40 chromedriver + 392512
+6   chromedriver                        0x00000001048c6cc8 chromedriver + 388296
+7   chromedriver                        0x00000001048bc868 chromedriver + 346216
+8   chromedriver                        0x00000001048bc254 chromedriver + 344660
+9   chromedriver                        0x00000001048ee85c chromedriver + 551004
+10  chromedriver                        0x00000001048baf58 chromedriver + 339800
+11  chromedriver                        0x0000000104c82bd4 chromedriver + 4303828
+12  chromedriver                        0x0000000104c87094 chromedriver + 4321428
+13  chromedriver                        0x0000000104c8b600 chromedriver + 4339200
+14  chromedriver                        0x0000000104c87af4 chromedriver + 4324084
+15  chromedriver                        0x0000000104c6652c chromedriver + 4187436
+16  chromedriver                        0x0000000104c9f488 chromedriver + 4420744
+17  chromedriver                        0x0000000104c9f5ec chromedriver + 4421100
+18  chromedriver                        0x0000000104cb392c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (293, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001049dd170 chromedriver + 4477296
+1   chromedriver                        0x0000000104974c18 chromedriver + 4049944
+2   chromedriver                        0x00000001045c6d40 chromedriver + 191808
+3   chromedriver                        0x00000001045fbce0 chromedriver + 408800
+4   chromedriver                        0x00000001045f9f28 chromedriver + 401192
+5   chromedriver                        0x00000001045f7d40 chromedriver + 392512
+6   chromedriver                        0x00000001045f6cc8 chromedriver + 388296
+7   chromedriver                        0x00000001045ec868 chromedriver + 346216
+8   chromedriver                        0x00000001045ec254 chromedriver + 344660
+9   chromedriver                        0x000000010461e85c chromedriver + 551004
+10  chromedriver                        0x00000001045eaf58 chromedriver + 339800
+11  chromedriver                        0x00000001049b2bd4 chromedriver + 4303828
+12  chromedriver                        0x00000001049b7094 chromedriver + 4321428
+13  chromedriver                        0x00000001049bb600 chromedriver + 4339200
+14  chromedriver                        0x00000001049b7af4 chromedriver + 4324084
+15  chromedriver                        0x000000010499652c chromedriver + 4187436
+16  chromedriver                        0x00000001049cf488 chromedriver + 4420744
+17  chromedriver                        0x00000001049cf5ec chromedriver + 4421100
+18  chromedriver                        0x00000001049e392c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (317, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000102ff1170 chromedriver + 4477296
+1   chromedriver                        0x0000000102f88c18 chromedriver + 4049944
+2   chromedriver                        0x0000000102bdad40 chromedriver + 191808
+3   chromedriver                        0x0000000102c0fce0 chromedriver + 408800
+4   chromedriver                        0x0000000102c0df28 chromedriver + 401192
+5   chromedriver                        0x0000000102c0bd40 chromedriver + 392512
+6   chromedriver                        0x0000000102c0acc8 chromedriver + 388296
+7   chromedriver                        0x0000000102c00868 chromedriver + 346216
+8   chromedriver                        0x0000000102c00254 chromedriver + 344660
+9   chromedriver                        0x0000000102c3285c chromedriver + 551004
+10  chromedriver                        0x0000000102bfef58 chromedriver + 339800
+11  chromedriver                        0x0000000102fc6bd4 chromedriver + 4303828
+12  chromedriver                        0x0000000102fcb094 chromedriver + 4321428
+13  chromedriver                        0x0000000102fcf600 chromedriver + 4339200
+14  chromedriver                        0x0000000102fcbaf4 chromedriver + 4324084
+15  chromedriver                        0x0000000102faa52c chromedriver + 4187436
+16  chromedriver                        0x0000000102fe3488 chromedriver + 4420744
+17  chromedriver                        0x0000000102fe35ec chromedriver + 4421100
+18  chromedriver                        0x0000000102ff792c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000104891170 chromedriver + 4477296
+1   chromedriver                        0x0000000104828c18 chromedriver + 4049944
+2   chromedriver                        0x000000010447ad40 chromedriver + 191808
+3   chromedriver                        0x000000010446896c chromedriver + 117100
+4   chromedriver                        0x000000010446813c chromedriver + 115004
+5   chromedriver                        0x0000000104467790 chromedriver + 112528
+6   chromedriver                        0x000000010446689c chromedriver + 108700
+7   chromedriver                        0x0000000104466d38 chromedriver + 109880
+8   chromedriver                        0x0000000104474220 chromedriver + 164384
+9   chromedriver                        0x00000001044812d4 chromedriver + 217812
+10  chromedriver                        0x0000000104466fdc chromedriver + 110556
+11  chromedriver                        0x0000000104480f4c chromedriver + 216908
+12  chromedriver                        0x00000001044d2b70 chromedriver + 551792
+13  chromedriver                        0x000000010449ef58 chromedriver + 339800
+14  chromedriver                        0x0000000104866bd4 chromedriver + 4303828
+15  chromedriver                        0x000000010486b094 chromedriver + 4321428
+16  chromedriver                        0x000000010486f600 chromedriver + 4339200
+17  chromedriver                        0x000000010486baf4 chromedriver + 4324084
+18  chromedriver                        0x000000010484a52c chromedriver + 4187436
+19  chromedriver                        0x0000000104883488 chromedriver + 4420744
+20  chromedriver                        0x00000001048835ec chromedriver + 4421100
+21  chromedriver                        0x000000010489792c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000103109170 chromedriver + 4477296
+1   chromedriver                        0x00000001030a0c18 chromedriver + 4049944
+2   chromedriver                        0x0000000102cf2d40 chromedriver + 191808
+3   chromedriver                        0x0000000102ce096c chromedriver + 117100
+4   chromedriver                        0x0000000102ce013c chromedriver + 115004
+5   chromedriver                        0x0000000102cdf790 chromedriver + 112528
+6   chromedriver                        0x0000000102cde89c chromedriver + 108700
+7   chromedriver                        0x0000000102cded38 chromedriver + 109880
+8   chromedriver                        0x0000000102cec220 chromedriver + 164384
+9   chromedriver                        0x0000000102cf92d4 chromedriver + 217812
+10  chromedriver                        0x0000000102cdefdc chromedriver + 110556
+11  chromedriver                        0x0000000102cf8f4c chromedriver + 216908
+12  chromedriver                        0x0000000102d4ab70 chromedriver + 551792
+13  chromedriver                        0x0000000102d16f58 chromedriver + 339800
+14  chromedriver                        0x00000001030debd4 chromedriver + 4303828
+15  chromedriver                        0x00000001030e3094 chromedriver + 4321428
+16  chromedriver                        0x00000001030e7600 chromedriver + 4339200
+17  chromedriver                        0x00000001030e3af4 chromedriver + 4324084
+18  chromedriver                        0x00000001030c252c chromedriver + 4187436
+19  chromedriver                        0x00000001030fb488 chromedriver + 4420744
+20  chromedriver                        0x00000001030fb5ec chromedriver + 4421100
+21  chromedriver                        0x000000010310f92c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001050fd170 chromedriver + 4477296
+1   chromedriver                        0x0000000105094c18 chromedriver + 4049944
+2   chromedriver                        0x0000000104ce6d40 chromedriver + 191808
+3   chromedriver                        0x0000000104cd496c chromedriver + 117100
+4   chromedriver                        0x0000000104cd413c chromedriver + 115004
+5   chromedriver                        0x0000000104cd3790 chromedriver + 112528
+6   chromedriver                        0x0000000104cd289c chromedriver + 108700
+7   chromedriver                        0x0000000104cd2d38 chromedriver + 109880
+8   chromedriver                        0x0000000104ce0220 chromedriver + 164384
+9   chromedriver                        0x0000000104ced2d4 chromedriver + 217812
+10  chromedriver                        0x0000000104cd2fdc chromedriver + 110556
+11  chromedriver                        0x0000000104cecf4c chromedriver + 216908
+12  chromedriver                        0x0000000104d3eb70 chromedriver + 551792
+13  chromedriver                        0x0000000104d0af58 chromedriver + 339800
+14  chromedriver                        0x00000001050d2bd4 chromedriver + 4303828
+15  chromedriver                        0x00000001050d7094 chromedriver + 4321428
+16  chromedriver                        0x00000001050db600 chromedriver + 4339200
+17  chromedriver                        0x00000001050d7af4 chromedriver + 4324084
+18  chromedriver                        0x00000001050b652c chromedriver + 4187436
+19  chromedriver                        0x00000001050ef488 chromedriver + 4420744
+20  chromedriver                        0x00000001050ef5ec chromedriver + 4421100
+21  chromedriver                        0x000000010510392c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x0000000191849240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000191844024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (305, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000102b45170 chromedriver + 4477296
+1   chromedriver                        0x0000000102adcc18 chromedriver + 4049944
+2   chromedriver                        0x000000010272ed40 chromedriver + 191808
+3   chromedriver                        0x0000000102763ce0 chromedriver + 408800
+4   chromedriver                        0x0000000102761f28 chromedriver + 401192
+5   chromedriver                        0x000000010275fd40 chromedriver + 392512
+6   chromedriver                        0x000000010275ecc8 chromedriver + 388296
+7   chromedriver                        0x0000000102754868 chromedriver + 346216
+8   chromedriver                        0x0000000102754254 chromedriver + 344660
+9   chromedriver                        0x000000010278685c chromedriver + 551004
+10  chromedriver                        0x0000000102752f58 chromedriver + 339800
+11  chromedriver                        0x0000000102b1abd4 chromedriver + 4303828
+12  chromedriver                        0x0000000102b1f094 chromedriver + 4321428
+13  chromedriver                        0x0000000102b23600 chromedriver + 4339200
+14  chromedriver                        0x0000000102b1faf4 chromedriver + 4324084
+15  chromedriver                        0x0000000102afe52c chromedriver + 4187436
+16  chromedriver                        0x0000000102b37488 chromedriver + 4420744
+17  chromedriver                        0x0000000102b375ec chromedriver + 4421100
+18  chromedriver                        0x0000000102b4b92c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (317, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001047a1170 chromedriver + 4477296
+1   chromedriver                        0x0000000104738c18 chromedriver + 4049944
+2   chromedriver                        0x000000010438ad40 chromedriver + 191808
+3   chromedriver                        0x00000001043bfce0 chromedriver + 408800
+4   chromedriver                        0x00000001043bdf28 chromedriver + 401192
+5   chromedriver                        0x00000001043bbd40 chromedriver + 392512
+6   chromedriver                        0x00000001043bacc8 chromedriver + 388296
+7   chromedriver                        0x00000001043b0868 chromedriver + 346216
+8   chromedriver                        0x00000001043b0254 chromedriver + 344660
+9   chromedriver                        0x00000001043e285c chromedriver + 551004
+10  chromedriver                        0x00000001043aef58 chromedriver + 339800
+11  chromedriver                        0x0000000104776bd4 chromedriver + 4303828
+12  chromedriver                        0x000000010477b094 chromedriver + 4321428
+13  chromedriver                        0x000000010477f600 chromedriver + 4339200
+14  chromedriver                        0x000000010477baf4 chromedriver + 4324084
+15  chromedriver                        0x000000010475a52c chromedriver + 4187436
+16  chromedriver                        0x0000000104793488 chromedriver + 4420744
+17  chromedriver                        0x00000001047935ec chromedriver + 4421100
+18  chromedriver                        0x00000001047a792c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001004c1170 chromedriver + 4477296
+1   chromedriver                        0x0000000100458c18 chromedriver + 4049944
+2   chromedriver                        0x00000001000aad40 chromedriver + 191808
+3   chromedriver                        0x000000010009896c chromedriver + 117100
+4   chromedriver                        0x000000010009813c chromedriver + 115004
+5   chromedriver                        0x0000000100097790 chromedriver + 112528
+6   chromedriver                        0x000000010009689c chromedriver + 108700
+7   chromedriver                        0x0000000100096d38 chromedriver + 109880
+8   chromedriver                        0x00000001000a4220 chromedriver + 164384
+9   chromedriver                        0x00000001000b12d4 chromedriver + 217812
+10  chromedriver                        0x0000000100096fdc chromedriver + 110556
+11  chromedriver                        0x00000001000b0f4c chromedriver + 216908
+12  chromedriver                        0x0000000100102b70 chromedriver + 551792
+13  chromedriver                        0x00000001000cef58 chromedriver + 339800
+14  chromedriver                        0x0000000100496bd4 chromedriver + 4303828
+15  chromedriver                        0x000000010049b094 chromedriver + 4321428
+16  chromedriver                        0x000000010049f600 chromedriver + 4339200
+17  chromedriver                        0x000000010049baf4 chromedriver + 4324084
+18  chromedriver                        0x000000010047a52c chromedriver + 4187436
+19  chromedriver                        0x00000001004b3488 chromedriver + 4420744
+20  chromedriver                        0x00000001004b35ec chromedriver + 4421100
+21  chromedriver                        0x00000001004c792c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (317, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000100485170 chromedriver + 4477296
+1   chromedriver                        0x000000010041cc18 chromedriver + 4049944
+2   chromedriver                        0x000000010006ed40 chromedriver + 191808
+3   chromedriver                        0x00000001000a3ce0 chromedriver + 408800
+4   chromedriver                        0x00000001000a1f28 chromedriver + 401192
+5   chromedriver                        0x000000010009fd40 chromedriver + 392512
+6   chromedriver                        0x000000010009ecc8 chromedriver + 388296
+7   chromedriver                        0x0000000100094868 chromedriver + 346216
+8   chromedriver                        0x0000000100094254 chromedriver + 344660
+9   chromedriver                        0x00000001000c685c chromedriver + 551004
+10  chromedriver                        0x0000000100092f58 chromedriver + 339800
+11  chromedriver                        0x000000010045abd4 chromedriver + 4303828
+12  chromedriver                        0x000000010045f094 chromedriver + 4321428
+13  chromedriver                        0x0000000100463600 chromedriver + 4339200
+14  chromedriver                        0x000000010045faf4 chromedriver + 4324084
+15  chromedriver                        0x000000010043e52c chromedriver + 4187436
+16  chromedriver                        0x0000000100477488 chromedriver + 4420744
+17  chromedriver                        0x00000001004775ec chromedriver + 4421100
+18  chromedriver                        0x000000010048b92c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000104779170 chromedriver + 4477296
+1   chromedriver                        0x0000000104710c18 chromedriver + 4049944
+2   chromedriver                        0x0000000104362d40 chromedriver + 191808
+3   chromedriver                        0x000000010435096c chromedriver + 117100
+4   chromedriver                        0x000000010435013c chromedriver + 115004
+5   chromedriver                        0x000000010434f790 chromedriver + 112528
+6   chromedriver                        0x000000010434e89c chromedriver + 108700
+7   chromedriver                        0x000000010434ed38 chromedriver + 109880
+8   chromedriver                        0x000000010435c220 chromedriver + 164384
+9   chromedriver                        0x00000001043692d4 chromedriver + 217812
+10  chromedriver                        0x000000010434efdc chromedriver + 110556
+11  chromedriver                        0x0000000104368f4c chromedriver + 216908
+12  chromedriver                        0x00000001043bab70 chromedriver + 551792
+13  chromedriver                        0x0000000104386f58 chromedriver + 339800
+14  chromedriver                        0x000000010474ebd4 chromedriver + 4303828
+15  chromedriver                        0x0000000104753094 chromedriver + 4321428
+16  chromedriver                        0x0000000104757600 chromedriver + 4339200
+17  chromedriver                        0x0000000104753af4 chromedriver + 4324084
+18  chromedriver                        0x000000010473252c chromedriver + 4187436
+19  chromedriver                        0x000000010476b488 chromedriver + 4420744
+20  chromedriver                        0x000000010476b5ec chromedriver + 4421100
+21  chromedriver                        0x000000010477f92c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (305, 82). Other element would receive the click: <div data-test="cookie-overlay" class="overlay-2KhaK"></div>
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000104cb1170 chromedriver + 4477296
+1   chromedriver                        0x0000000104c48c18 chromedriver + 4049944
+2   chromedriver                        0x000000010489ad40 chromedriver + 191808
+3   chromedriver                        0x00000001048cfce0 chromedriver + 408800
+4   chromedriver                        0x00000001048cdf28 chromedriver + 401192
+5   chromedriver                        0x00000001048cbd40 chromedriver + 392512
+6   chromedriver                        0x00000001048cacc8 chromedriver + 388296
+7   chromedriver                        0x00000001048c0868 chromedriver + 346216
+8   chromedriver                        0x00000001048c0254 chromedriver + 344660
+9   chromedriver                        0x00000001048f285c chromedriver + 551004
+10  chromedriver                        0x00000001048bef58 chromedriver + 339800
+11  chromedriver                        0x0000000104c86bd4 chromedriver + 4303828
+12  chromedriver                        0x0000000104c8b094 chromedriver + 4321428
+13  chromedriver                        0x0000000104c8f600 chromedriver + 4339200
+14  chromedriver                        0x0000000104c8baf4 chromedriver + 4324084
+15  chromedriver                        0x0000000104c6a52c chromedriver + 4187436
+16  chromedriver                        0x0000000104ca3488 chromedriver + 4420744
+17  chromedriver                        0x0000000104ca35ec chromedriver + 4421100
+18  chromedriver                        0x0000000104cb792c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000102bad170 chromedriver + 4477296
+1   chromedriver                        0x0000000102b44c18 chromedriver + 4049944
+2   chromedriver                        0x0000000102796d40 chromedriver + 191808
+3   chromedriver                        0x000000010278496c chromedriver + 117100
+4   chromedriver                        0x000000010278413c chromedriver + 115004
+5   chromedriver                        0x0000000102783790 chromedriver + 112528
+6   chromedriver                        0x000000010278289c chromedriver + 108700
+7   chromedriver                        0x0000000102782d38 chromedriver + 109880
+8   chromedriver                        0x0000000102790220 chromedriver + 164384
+9   chromedriver                        0x000000010279d2d4 chromedriver + 217812
+10  chromedriver                        0x0000000102782fdc chromedriver + 110556
+11  chromedriver                        0x000000010279cf4c chromedriver + 216908
+12  chromedriver                        0x00000001027eeb70 chromedriver + 551792
+13  chromedriver                        0x00000001027baf58 chromedriver + 339800
+14  chromedriver                        0x0000000102b82bd4 chromedriver + 4303828
+15  chromedriver                        0x0000000102b87094 chromedriver + 4321428
+16  chromedriver                        0x0000000102b8b600 chromedriver + 4339200
+17  chromedriver                        0x0000000102b87af4 chromedriver + 4324084
+18  chromedriver                        0x0000000102b6652c chromedriver + 4187436
+19  chromedriver                        0x0000000102b9f488 chromedriver + 4420744
+20  chromedriver                        0x0000000102b9f5ec chromedriver + 4421100
+21  chromedriver                        0x0000000102bb392c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (305, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000102d1d170 chromedriver + 4477296
+1   chromedriver                        0x0000000102cb4c18 chromedriver + 4049944
+2   chromedriver                        0x0000000102906d40 chromedriver + 191808
+3   chromedriver                        0x000000010293bce0 chromedriver + 408800
+4   chromedriver                        0x0000000102939f28 chromedriver + 401192
+5   chromedriver                        0x0000000102937d40 chromedriver + 392512
+6   chromedriver                        0x0000000102936cc8 chromedriver + 388296
+7   chromedriver                        0x000000010292c868 chromedriver + 346216
+8   chromedriver                        0x000000010292c254 chromedriver + 344660
+9   chromedriver                        0x000000010295e85c chromedriver + 551004
+10  chromedriver                        0x000000010292af58 chromedriver + 339800
+11  chromedriver                        0x0000000102cf2bd4 chromedriver + 4303828
+12  chromedriver                        0x0000000102cf7094 chromedriver + 4321428
+13  chromedriver                        0x0000000102cfb600 chromedriver + 4339200
+14  chromedriver                        0x0000000102cf7af4 chromedriver + 4324084
+15  chromedriver                        0x0000000102cd652c chromedriver + 4187436
+16  chromedriver                        0x0000000102d0f488 chromedriver + 4420744
+17  chromedriver                        0x0000000102d0f5ec chromedriver + 4421100
+18  chromedriver                        0x0000000102d2392c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000101039170 chromedriver + 4477296
+1   chromedriver                        0x0000000100fd0c18 chromedriver + 4049944
+2   chromedriver                        0x0000000100c22d40 chromedriver + 191808
+3   chromedriver                        0x0000000100c1096c chromedriver + 117100
+4   chromedriver                        0x0000000100c1013c chromedriver + 115004
+5   chromedriver                        0x0000000100c0f790 chromedriver + 112528
+6   chromedriver                        0x0000000100c0e89c chromedriver + 108700
+7   chromedriver                        0x0000000100c0ed38 chromedriver + 109880
+8   chromedriver                        0x0000000100c1c220 chromedriver + 164384
+9   chromedriver                        0x0000000100c292d4 chromedriver + 217812
+10  chromedriver                        0x0000000100c0efdc chromedriver + 110556
+11  chromedriver                        0x0000000100c28f4c chromedriver + 216908
+12  chromedriver                        0x0000000100c7ab70 chromedriver + 551792
+13  chromedriver                        0x0000000100c46f58 chromedriver + 339800
+14  chromedriver                        0x000000010100ebd4 chromedriver + 4303828
+15  chromedriver                        0x0000000101013094 chromedriver + 4321428
+16  chromedriver                        0x0000000101017600 chromedriver + 4339200
+17  chromedriver                        0x0000000101013af4 chromedriver + 4324084
+18  chromedriver                        0x0000000100ff252c chromedriver + 4187436
+19  chromedriver                        0x000000010102b488 chromedriver + 4420744
+20  chromedriver                        0x000000010102b5ec chromedriver + 4421100
+21  chromedriver                        0x000000010103f92c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (317, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000104d75170 chromedriver + 4477296
+1   chromedriver                        0x0000000104d0cc18 chromedriver + 4049944
+2   chromedriver                        0x000000010495ed40 chromedriver + 191808
+3   chromedriver                        0x0000000104993ce0 chromedriver + 408800
+4   chromedriver                        0x0000000104991f28 chromedriver + 401192
+5   chromedriver                        0x000000010498fd40 chromedriver + 392512
+6   chromedriver                        0x000000010498ecc8 chromedriver + 388296
+7   chromedriver                        0x0000000104984868 chromedriver + 346216
+8   chromedriver                        0x0000000104984254 chromedriver + 344660
+9   chromedriver                        0x00000001049b685c chromedriver + 551004
+10  chromedriver                        0x0000000104982f58 chromedriver + 339800
+11  chromedriver                        0x0000000104d4abd4 chromedriver + 4303828
+12  chromedriver                        0x0000000104d4f094 chromedriver + 4321428
+13  chromedriver                        0x0000000104d53600 chromedriver + 4339200
+14  chromedriver                        0x0000000104d4faf4 chromedriver + 4324084
+15  chromedriver                        0x0000000104d2e52c chromedriver + 4187436
+16  chromedriver                        0x0000000104d67488 chromedriver + 4420744
+17  chromedriver                        0x0000000104d675ec chromedriver + 4421100
+18  chromedriver                        0x0000000104d7b92c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001028a9170 chromedriver + 4477296
+1   chromedriver                        0x0000000102840c18 chromedriver + 4049944
+2   chromedriver                        0x0000000102492d40 chromedriver + 191808
+3   chromedriver                        0x000000010248096c chromedriver + 117100
+4   chromedriver                        0x000000010248013c chromedriver + 115004
+5   chromedriver                        0x000000010247f790 chromedriver + 112528
+6   chromedriver                        0x000000010247e89c chromedriver + 108700
+7   chromedriver                        0x000000010247ed38 chromedriver + 109880
+8   chromedriver                        0x000000010248c220 chromedriver + 164384
+9   chromedriver                        0x00000001024992d4 chromedriver + 217812
+10  chromedriver                        0x000000010247efdc chromedriver + 110556
+11  chromedriver                        0x0000000102498f4c chromedriver + 216908
+12  chromedriver                        0x00000001024eab70 chromedriver + 551792
+13  chromedriver                        0x00000001024b6f58 chromedriver + 339800
+14  chromedriver                        0x000000010287ebd4 chromedriver + 4303828
+15  chromedriver                        0x0000000102883094 chromedriver + 4321428
+16  chromedriver                        0x0000000102887600 chromedriver + 4339200
+17  chromedriver                        0x0000000102883af4 chromedriver + 4324084
+18  chromedriver                        0x000000010286252c chromedriver + 4187436
+19  chromedriver                        0x000000010289b488 chromedriver + 4420744
+20  chromedriver                        0x000000010289b5ec chromedriver + 4421100
+21  chromedriver                        0x00000001028af92c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001028a9170 chromedriver + 4477296
+1   chromedriver                        0x0000000102840c18 chromedriver + 4049944
+2   chromedriver                        0x0000000102492d40 chromedriver + 191808
+3   chromedriver                        0x000000010248096c chromedriver + 117100
+4   chromedriver                        0x000000010248013c chromedriver + 115004
+5   chromedriver                        0x000000010247f790 chromedriver + 112528
+6   chromedriver                        0x000000010247f038 chromedriver + 110648
+7   chromedriver                        0x000000010247ef28 chromedriver + 110376
+8   chromedriver                        0x00000001024ea144 chromedriver + 549188
+9   chromedriver                        0x00000001024b6f58 chromedriver + 339800
+10  chromedriver                        0x000000010287ebd4 chromedriver + 4303828
+11  chromedriver                        0x0000000102883094 chromedriver + 4321428
+12  chromedriver                        0x0000000102887600 chromedriver + 4339200
+13  chromedriver                        0x0000000102883af4 chromedriver + 4324084
+14  chromedriver                        0x000000010286252c chromedriver + 4187436
+15  chromedriver                        0x000000010289b488 chromedriver + 4420744
+16  chromedriver                        0x000000010289b5ec chromedriver + 4421100
+17  chromedriver                        0x00000001028af92c chromedriver + 4503852
+18  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+19  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: invalid selector: Unable to locate an element with the xpath expression .//span[@class='title_title__desc__ZCdyp title_title__desc--four-lines__7hRtk')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string './/span[@class='title_title__desc__ZCdyp title_title__desc--four-lines__7hRtk')]' is not a valid XPath expression.
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001008a9170 chromedriver + 4477296
+1   chromedriver                        0x0000000100840c18 chromedriver + 4049944
+2   chromedriver                        0x0000000100492d40 chromedriver + 191808
+3   chromedriver                        0x0000000100495794 chromedriver + 202644
+4   chromedriver                        0x00000001004955fc chromedriver + 202236
+5   chromedriver                        0x0000000100495830 chromedriver + 202800
+6   chromedriver                        0x00000001004c1888 chromedriver + 383112
+7   chromedriver                        0x00000001004b8254 chromedriver + 344660
+8   chromedriver                        0x00000001004ea85c chromedriver + 551004
+9   chromedriver                        0x00000001004b6f58 chromedriver + 339800
+10  chromedriver                        0x000000010087ebd4 chromedriver + 4303828
+11  chromedriver                        0x0000000100883094 chromedriver + 4321428
+12  chromedriver                        0x0000000100887600 chromedriver + 4339200
+13  chromedriver                        0x0000000100883af4 chromedriver + 4324084
+14  chromedriver                        0x000000010086252c chromedriver + 4187436
+15  chromedriver                        0x000000010089b488 chromedriver + 4420744
+16  chromedriver                        0x000000010089b5ec chromedriver + 4421100
+17  chromedriver                        0x00000001008af92c chromedriver + 4503852
+18  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+19  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000104fa9170 chromedriver + 4477296
+1   chromedriver                        0x0000000104f40c18 chromedriver + 4049944
+2   chromedriver                        0x0000000104b92d40 chromedriver + 191808
+3   chromedriver                        0x0000000104b8096c chromedriver + 117100
+4   chromedriver                        0x0000000104b8013c chromedriver + 115004
+5   chromedriver                        0x0000000104b7f790 chromedriver + 112528
+6   chromedriver                        0x0000000104b7e89c chromedriver + 108700
+7   chromedriver                        0x0000000104b7ed38 chromedriver + 109880
+8   chromedriver                        0x0000000104b8c220 chromedriver + 164384
+9   chromedriver                        0x0000000104b992d4 chromedriver + 217812
+10  chromedriver                        0x0000000104b7efdc chromedriver + 110556
+11  chromedriver                        0x0000000104b98f4c chromedriver + 216908
+12  chromedriver                        0x0000000104beab70 chromedriver + 551792
+13  chromedriver                        0x0000000104bb6f58 chromedriver + 339800
+14  chromedriver                        0x0000000104f7ebd4 chromedriver + 4303828
+15  chromedriver                        0x0000000104f83094 chromedriver + 4321428
+16  chromedriver                        0x0000000104f87600 chromedriver + 4339200
+17  chromedriver                        0x0000000104f83af4 chromedriver + 4324084
+18  chromedriver                        0x0000000104f6252c chromedriver + 4187436
+19  chromedriver                        0x0000000104f9b488 chromedriver + 4420744
+20  chromedriver                        0x0000000104f9b5ec chromedriver + 4421100
+21  chromedriver                        0x0000000104faf92c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000104fa9170 chromedriver + 4477296
+1   chromedriver                        0x0000000104f40c18 chromedriver + 4049944
+2   chromedriver                        0x0000000104b92d40 chromedriver + 191808
+3   chromedriver                        0x0000000104b8096c chromedriver + 117100
+4   chromedriver                        0x0000000104b8013c chromedriver + 115004
+5   chromedriver                        0x0000000104b7f790 chromedriver + 112528
+6   chromedriver                        0x0000000104b7f038 chromedriver + 110648
+7   chromedriver                        0x0000000104b7ef28 chromedriver + 110376
+8   chromedriver                        0x0000000104bea144 chromedriver + 549188
+9   chromedriver                        0x0000000104bb6f58 chromedriver + 339800
+10  chromedriver                        0x0000000104f7ebd4 chromedriver + 4303828
+11  chromedriver                        0x0000000104f83094 chromedriver + 4321428
+12  chromedriver                        0x0000000104f87600 chromedriver + 4339200
+13  chromedriver                        0x0000000104f83af4 chromedriver + 4324084
+14  chromedriver                        0x0000000104f6252c chromedriver + 4187436
+15  chromedriver                        0x0000000104f9b488 chromedriver + 4420744
+16  chromedriver                        0x0000000104f9b5ec chromedriver + 4421100
+17  chromedriver                        0x0000000104faf92c chromedriver + 4503852
+18  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+19  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (305, 82). Other element would receive the click: <input type="text" name="search-term" id="mobileSearch" label="Search" placeholder="Search product or brand" maxlength="150" autocomplete="off" value="mobile" class="search-input-searchInput--1dbfe search-input-searchInput__active--8eda0">
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000100eb1170 chromedriver + 4477296
+1   chromedriver                        0x0000000100e48c18 chromedriver + 4049944
+2   chromedriver                        0x0000000100a9ad40 chromedriver + 191808
+3   chromedriver                        0x0000000100acfce0 chromedriver + 408800
+4   chromedriver                        0x0000000100acdf28 chromedriver + 401192
+5   chromedriver                        0x0000000100acbd40 chromedriver + 392512
+6   chromedriver                        0x0000000100acacc8 chromedriver + 388296
+7   chromedriver                        0x0000000100ac0868 chromedriver + 346216
+8   chromedriver                        0x0000000100ac0254 chromedriver + 344660
+9   chromedriver                        0x0000000100af285c chromedriver + 551004
+10  chromedriver                        0x0000000100abef58 chromedriver + 339800
+11  chromedriver                        0x0000000100e86bd4 chromedriver + 4303828
+12  chromedriver                        0x0000000100e8b094 chromedriver + 4321428
+13  chromedriver                        0x0000000100e8f600 chromedriver + 4339200
+14  chromedriver                        0x0000000100e8baf4 chromedriver + 4324084
+15  chromedriver                        0x0000000100e6a52c chromedriver + 4187436
+16  chromedriver                        0x0000000100ea3488 chromedriver + 4420744
+17  chromedriver                        0x0000000100ea35ec chromedriver + 4421100
+18  chromedriver                        0x0000000100eb792c chromedriver + 4503852
+19  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: no such window: window was already closed
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x0000000100eb1170 chromedriver + 4477296
+1   chromedriver                        0x0000000100e48c18 chromedriver + 4049944
+2   chromedriver                        0x0000000100a9ad40 chromedriver + 191808
+3   chromedriver                        0x0000000100a8b7d8 chromedriver + 128984
+4   chromedriver                        0x0000000100a85e34 chromedriver + 106036
+5   chromedriver                        0x0000000100af2078 chromedriver + 548984
+6   chromedriver                        0x0000000100abef58 chromedriver + 339800
+7   chromedriver                        0x0000000100e86bd4 chromedriver + 4303828
+8   chromedriver                        0x0000000100e8b094 chromedriver + 4321428
+9   chromedriver                        0x0000000100e8f600 chromedriver + 4339200
+10  chromedriver                        0x0000000100e8baf4 chromedriver + 4324084
+11  chromedriver                        0x0000000100e6a52c chromedriver + 4187436
+12  chromedriver                        0x0000000100ea3488 chromedriver + 4420744
+13  chromedriver                        0x0000000100ea35ec chromedriver + 4421100
+14  chromedriver                        0x0000000100eb792c chromedriver + 4503852
+15  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+16  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001024e1170 chromedriver + 4477296
+1   chromedriver                        0x0000000102478c18 chromedriver + 4049944
+2   chromedriver                        0x00000001020cad40 chromedriver + 191808
+3   chromedriver                        0x00000001020b896c chromedriver + 117100
+4   chromedriver                        0x00000001020b813c chromedriver + 115004
+5   chromedriver                        0x00000001020b7790 chromedriver + 112528
+6   chromedriver                        0x00000001020b689c chromedriver + 108700
+7   chromedriver                        0x00000001020b6d38 chromedriver + 109880
+8   chromedriver                        0x00000001020c4220 chromedriver + 164384
+9   chromedriver                        0x00000001020d12d4 chromedriver + 217812
+10  chromedriver                        0x00000001020b6fdc chromedriver + 110556
+11  chromedriver                        0x00000001020d0f4c chromedriver + 216908
+12  chromedriver                        0x0000000102122b70 chromedriver + 551792
+13  chromedriver                        0x00000001020eef58 chromedriver + 339800
+14  chromedriver                        0x00000001024b6bd4 chromedriver + 4303828
+15  chromedriver                        0x00000001024bb094 chromedriver + 4321428
+16  chromedriver                        0x00000001024bf600 chromedriver + 4339200
+17  chromedriver                        0x00000001024bbaf4 chromedriver + 4324084
+18  chromedriver                        0x000000010249a52c chromedriver + 4187436
+19  chromedriver                        0x00000001024d3488 chromedriver + 4420744
+20  chromedriver                        0x00000001024d35ec chromedriver + 4421100
+21  chromedriver                        0x00000001024e792c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.53)
+Stacktrace:
+0   chromedriver                        0x00000001024e1170 chromedriver + 4477296
+1   chromedriver                        0x0000000102478c18 chromedriver + 4049944
+2   chromedriver                        0x00000001020cad40 chromedriver + 191808
+3   chromedriver                        0x00000001020b896c chromedriver + 117100
+4   chromedriver                        0x00000001020b813c chromedriver + 115004
+5   chromedriver                        0x00000001020b7790 chromedriver + 112528
+6   chromedriver                        0x00000001020b7038 chromedriver + 110648
+7   chromedriver                        0x00000001020b6f28 chromedriver + 110376
+8   chromedriver                        0x0000000102122144 chromedriver + 549188
+9   chromedriver                        0x00000001020eef58 chromedriver + 339800
+10  chromedriver                        0x00000001024b6bd4 chromedriver + 4303828
+11  chromedriver                        0x00000001024bb094 chromedriver + 4321428
+12  chromedriver                        0x00000001024bf600 chromedriver + 4339200
+13  chromedriver                        0x00000001024bbaf4 chromedriver + 4324084
+14  chromedriver                        0x000000010249a52c chromedriver + 4187436
+15  chromedriver                        0x00000001024d3488 chromedriver + 4420744
+16  chromedriver                        0x00000001024d35ec chromedriver + 4421100
+17  chromedriver                        0x00000001024e792c chromedriver + 4503852
+18  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
+19  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
