@@ -1,4 +1,18 @@
+################################################################################################################
+"""
+Author : Pratiksha
+File name : scraper.py
+Purpose : John's lewis products data collection pipeline
+ 
+"""
+################################################################################################################
+"""
+Importing Libraries
+"""
+################################################################################################################
 
+from genericpath import exists
+from numpy import empty
 from requests import options
 from selenium import webdriver
 from time import sleep
@@ -25,20 +39,31 @@ class Scraper():
         self.driver_path = driver_path
         self.search_name = "mobile"
         self.folder_name = "raw_data"
+        self.image_folder_name = "images"
         self.service = Service(self.driver_path)
         options = Options()
         self.driver = webdriver.Chrome(service=self.service, options=options)
         self._create_metadata_folders(self.folder_name)
-
+        self.create_folders(self.image_folder_name)
+        
     @staticmethod
     def _create_metadata_folders(directory_name):
         current_directory = os.getcwd() 
         saving_data_dir = os.path.join(current_directory, directory_name)
         if os.path.exists(saving_data_dir):
-            os.chdir(saving_data_dir)
+            print(f"Directory path is already exist : {saving_data_dir}")
         else:
-            os.mkdir(directory_name)
-            os.chdir(saving_data_dir)
+            os.mkdir(saving_data_dir)
+            print(f"OS path created : {saving_data_dir}")
+
+    def create_folders(self,folder_name_save):
+        current_directory = os.getcwd() 
+        check_data_dir = os.path.join(current_directory,self.folder_name)
+        if os.path.exists(check_data_dir):
+            folder_name = check_data_dir+"/"+folder_name_save
+            self._create_metadata_folders(folder_name)
+        else:
+            print(f"OS path is not exists : {check_data_dir}")
 
     def load_page(self, url):
         """
@@ -55,8 +80,11 @@ class Scraper():
         self.__accept_cookies()
         self.__search_on_searchbar()
         sleep(2)
-
+        
     def __accept_cookies(self):
+        """
+            This method is used to accept the cookies
+        """
         try:
             accept_cookies_by_clicking = self.__get_each_element("//*[@data-test='allow-all']") 
             accept_cookies_by_clicking.click()
@@ -69,21 +97,29 @@ class Scraper():
         try:
             search_name = self.__get_each_element("//input[@name='search-term']")
             search_name.send_keys(self.search_name)  
-            WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))).click()  
+            WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))).click()
+            self.get_product()      
         except AttributeError:
             pass
         except Exception as e:
-            Logger.logrecord(str(e))   
-   
-    def get_product_information(self):
+            Logger.logrecord(str(e)) 
+
+    def get_product(self):
+        """
+            This method is to get the product info amd sava data into json format
+        """
+        product_info_container = []
+        product_info_container = self.get_product_information()
+        self.save_json_data(product_info_container)
+
+    def get_product_information(self) -> list:
         """
             This method will collect all the search result into one container and apply loop to get the product details.
             We used UUid which is universal id to identify the record.
-
         """
         mobile_categories_container =[]
         product_list= []
-        mobile_categories_container = self.__get_elements_list("//div[@class='ProductGrid_product-grid__product__oD7Jq']")    
+        mobile_categories_container = self.__get_elements_list("//div[@class='ProductGrid_product-grid__product__oD7Jq']") 
         for mobile in mobile_categories_container:
             u_id = uuid.uuid4()
             u_unique_id = str(u_id)
@@ -94,7 +130,7 @@ class Scraper():
             mobile_info_price = mobile.find_element(by=By.XPATH, value=".//span[@class='price_price__now__3B4yM']").text
             mobile_info_src = mobile.find_element(by=By.XPATH, value=".//img[@class='image_image__jhaxk']").get_attribute("src")     
             mobile_container = {
-                'unique_id':u_unique_id,
+                'UUID':u_unique_id,
                 'product_id':product_id,
                 'title':mobile_info_title,
                 'price':mobile_info_price,
@@ -103,15 +139,42 @@ class Scraper():
             product_list.append(mobile_container)
         return product_list
 
-    def varify_the_folder_path(self, directory_name):
-        if os.path.exists(directory_name):
-            print(f"Directory path is already exist : {directory_name}")
-        else:
-            os.mkdir(directory_name)
-
-    def write_data_to_json_file(self,valid_path,valid_data):
+    def save_json_data(self,product_container_data : list):
         """
-            This method will write the product data into data.json file 
+            This method is used to save the json data. And it gives the count of product
+
+            parameter
+            ---------
+                product_container_data : list
+                    This parameter is a list type and it contains all information of each product
+        """
+
+        print(f"Total products count : {len(product_container_data)}")
+        if len(product_container_data) != 0:
+            for item in range(len(product_container_data)):
+                print("in this item")
+                product_id = product_container_data[item]['product_id'] 
+                product_image_src = product_container_data[item]['src']
+                current_directory = os.getcwd() 
+                saving_data_path = os.path.join(current_directory,self.folder_name,product_id)
+                self._create_metadata_folders(saving_data_path)
+                self.write_data_to_json_file(saving_data_path,product_container_data[item])
+                saving_image_path = os.path.join(current_directory,self.folder_name,self.image_folder_name)
+                self.download_images(saving_image_path,product_image_src,product_id)  
+        else:
+            print(f"Product container is empty : {product_container_data}")
+
+    def write_data_to_json_file(self,valid_path : str,valid_data : dict):
+        """
+            This method is used to save the data into data.json file 
+
+            parameters
+            ---------
+            valid_path : str
+                valid_path parameter is a string type that contain the path to save the data.
+            valid_data : dict
+                valid_data parameter is a dictionary type that contain the product informations.
+
         """
         self.data_file_name = "data"+".json"
         create_file_saving_path  = valid_path +"/"+ self.data_file_name
@@ -123,19 +186,23 @@ class Scraper():
             Logger.logrecord(str(e))
             print(f"msg : Error while dumping data on {create_file_saving_path} file")
 
-    def folderimage(self):
-        self.folder_images = "images"
-        current_directory = os.getcwd()
-        saving_data_dir = os.path.join(current_directory, self.folder_images)
-        self.varify_the_folder_path(saving_data_dir)
-        return saving_data_dir
-
-    def download_images(self,images_folder_path,product_image_link,product_id):
+    def download_images(self,images_folder_path : str,product_image_link: str,product_id : str):
         """
-            This method download the images and save it locally in raw_data/images folder
+            This method is used to download the images of products.
+
+            parameters
+            ----------
+            images_folder_path : str
+                images_folder_path is a string type and contain the folder path
+            product_image_link : str
+                product_image_link is a string type and contain the product image link
+            product_id : str
+                product_id is a string type and contain the product id information
+            
         """
         image_path = images_folder_path +"/"+ product_id + '.jpg'
         urllib.request.urlretrieve(product_image_link, image_path)
+        print("Image Downloaded")
 
     def __get_each_element(self, places_locate) -> object:
         elements = self.driver.find_element(by=By.XPATH, value=places_locate) 
@@ -148,20 +215,4 @@ class Scraper():
 if __name__ == "__main__":
     scraper = Scraper()
     scraper.load_page('https://www.johnlewis.com')
-    images_folder = scraper.folderimage()
-    product_info = scraper.get_product_information()
-    
-    for item in range(len(product_info)):
-        product_id = product_info[item]['product_id'] 
-        product_image_src = product_info[item]['src']
-        current_directory = os.getcwd() 
-        saving_data_dir = os.path.join(current_directory, product_id)
-        scraper.varify_the_folder_path(saving_data_dir)
-        scraper.write_data_to_json_file(saving_data_dir,product_info[item])
-        scraper.download_images(images_folder,product_image_src,product_id)
-        
-       
-       
 
-
-        
