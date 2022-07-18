@@ -10,9 +10,6 @@ Purpose : John's lewis products data collection pipeline
 Importing Libraries
 """
 ################################################################################################################
-
-from genericpath import exists
-from numpy import empty
 from requests import options
 from selenium import webdriver
 from time import sleep
