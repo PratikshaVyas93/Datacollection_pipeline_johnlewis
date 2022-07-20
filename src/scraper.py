@@ -48,10 +48,10 @@ class Scraper():
         current_directory = os.getcwd() 
         saving_data_dir = os.path.join(current_directory, directory_name)
         if os.path.exists(saving_data_dir):
-            print(f"Directory path is already exist : {saving_data_dir}")
+            print(f"msg : Directory path is already exist : {saving_data_dir}")
         else:
             os.mkdir(saving_data_dir)
-            print(f"OS path created : {saving_data_dir}")
+            print(f"msg : OS path created : {saving_data_dir}")
 
     def create_folders(self,folder_name_save):
         current_directory = os.getcwd() 
@@ -60,7 +60,7 @@ class Scraper():
             folder_name = check_data_dir+"/"+folder_name_save
             self._create_metadata_folders(folder_name)
         else:
-            print(f"OS path is not exists : {check_data_dir}")
+            print(f"msg : OS path is not exists : {check_data_dir}")
 
     def load_page(self, url):
         """
@@ -99,7 +99,8 @@ class Scraper():
         except AttributeError:
             pass
         except Exception as e:
-            Logger.logrecord(str(e)) 
+            Logger.logrecord(str(e))
+            print(f"msg : Error while searching the product {str(e)}")
 
     def get_product(self):
         """
@@ -114,26 +115,37 @@ class Scraper():
             This method will collect all the search result into one container and apply loop to get the product details.
             We used UUid which is universal id to identify the record.
         """
+
         mobile_categories_container =[]
         product_list= []
-        mobile_categories_container = self.__get_elements_list("//div[@class='ProductGrid_product-grid__product__oD7Jq']") 
-        for mobile in mobile_categories_container:
-            u_id = uuid.uuid4()
-            u_unique_id = str(u_id)
-            mobile_product_href = mobile.find_element(by=By.XPATH, value=".//a[@class='image_imageLink__1Znsz product-card_c-product-card__image__bO3kW product__image']").get_attribute("href")
-            unique_productid = mobile_product_href.split("/")
-            product_id = unique_productid[-1]
-            mobile_info_title = mobile.find_element(by=By.XPATH, value=".//span[@class='title_title__desc__ZCdyp title_title__desc--four-lines__7hRtk']").text
-            mobile_info_price = mobile.find_element(by=By.XPATH, value=".//span[@class='price_price__now__3B4yM']").text
-            mobile_info_src = mobile.find_element(by=By.XPATH, value=".//img[@class='image_image__jhaxk']").get_attribute("src")     
-            mobile_container = {
-                'UUID':u_unique_id,
-                'product_id':product_id,
-                'title':mobile_info_title,
-                'price':mobile_info_price,
-                'src':mobile_info_src
-            }
-            product_list.append(mobile_container)
+        try:
+            mobile_categories_container = self.__get_elements_list("//div[@class='ProductGrid_product-grid__product__oD7Jq']") 
+            print(mobile_categories_container,"mobile_categories_container")
+            if len(mobile_categories_container) != 0:
+                for mobile in mobile_categories_container:
+                    u_id = uuid.uuid4()
+                    u_unique_id = str(u_id)
+                    mobile_product_href = mobile.find_element(by=By.XPATH, value=".//a[@class='image_imageLink__1Znsz product-card_c-product-card__image__bO3kW product__image']").get_attribute("href")
+                    unique_productid = mobile_product_href.split("/")
+                    product_id = unique_productid[-1]
+                    mobile_info_title = mobile.find_element(by=By.XPATH, value=".//span[@class='title_title__desc__ZCdyp title_title__desc--four-lines__7hRtk']").text
+                    mobile_info_price = mobile.find_element(by=By.XPATH, value=".//span[@class='price_price__now__3B4yM']").text
+                    mobile_info_src = mobile.find_element(by=By.XPATH, value=".//img[@class='image_image__jhaxk']").get_attribute("src")     
+                    mobile_container = {
+                        'UUID':u_unique_id,
+                        'product_id':product_id,
+                        'title':mobile_info_title,
+                        'price':mobile_info_price,
+                        'src':mobile_info_src
+                    }
+                    product_list.append(mobile_container)
+            else:
+                print(f"msg : Product container is empty : {len(mobile_categories_container)} record/s")        
+        except AttributeError:
+            pass
+        except Exception as e:
+            print(f"msg : Error found in get_product_information() method : {str(e)}")
+            Logger.logrecord(str(e))        
         return product_list
 
     def save_json_data(self,product_container_data : list):
@@ -149,7 +161,6 @@ class Scraper():
         print(f"Total products count : {len(product_container_data)}")
         if len(product_container_data) != 0:
             for item in range(len(product_container_data)):
-                print("in this item")
                 product_id = product_container_data[item]['product_id'] 
                 product_image_src = product_container_data[item]['src']
                 current_directory = os.getcwd() 
@@ -159,7 +170,7 @@ class Scraper():
                 saving_image_path = os.path.join(current_directory,self.folder_name,self.image_folder_name)
                 self.download_images(saving_image_path,product_image_src,product_id)  
         else:
-            print(f"Product container is empty : {product_container_data}")
+            print(f"msg : Product container is empty : {len(product_container_data)}")
 
     def write_data_to_json_file(self,valid_path : str,valid_data : dict):
         """
@@ -198,8 +209,12 @@ class Scraper():
             
         """
         image_path = images_folder_path +"/"+ product_id + '.jpg'
-        urllib.request.urlretrieve(product_image_link, image_path)
-        print("Image Downloaded")
+        try:
+            urllib.request.urlretrieve(product_image_link, image_path)
+            print("msg : Image Downloaded")
+        except Exception as e:
+            Logger.logrecord(str(e))
+            print(f"msg : Error while downloading the images {str(e)}")
 
     def __get_each_element(self, places_locate) -> object:
         elements = self.driver.find_element(by=By.XPATH, value=places_locate) 
