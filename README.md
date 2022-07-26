@@ -18,15 +18,17 @@ once the installation is done, the next task is to navigate to the website, by p
 
 ## Milestone 3 - Retrieve data from details page
 I personally feel that I developed my programming skills during this module. 
-Once the chrome automatic search the term "mobile", it gives bunch of mobile phones result. There are 48 records of mobile on the site which are in stock and it displyed accordingly. My job is to get the detail of each mobile such as mobile name, mobile price, mobile image link, mobile id number. And this task can be done using for loop over div class of product(mobile result) container.And once it is done I created a dictionary of each mobile phone details and append it to the single list. Now, that list contains all the informations of all the mobile phones. Further, I iterate over that list and save that each dictionary data into json file under raw_data/productID folders. And in the same iteration extract the link of each mobile phone and download that image and dumped it into raw_data/images folder.
+Once the chrome automatic search the term "mobile", it gives bunch of mobile phones result. There are 48 records of mobile on the site which are in stock and it displyed accordingly. My job is to get the detail of each mobile such as mobile name, mobile price, mobile image link, mobile id number, UUID which is universal unique key generated for each record. And this task can be done using for loop over div class of product(mobile result) container.And once it is done I created a dictionary of each mobile phone details and append it to the single list. Now, that list contains all the informations of all the mobile phones. Further, I iterate over that list and save that each dictionary data into json file under raw_data/productID folders. And in the same iteration extract the link of each mobile phone and download that image and dumped it into raw_data/images folder.
 
 ## Milestone 4 - Documentation and testing
-This milestone is very crucial to implement. This section gives the depth knowladge of Docsting in python. How to create a comment in each method what are the formats of Docstring all are mentioned in this section.
+This milestone is very crucial to implement. This section gives the depth knowladge of Docsting in python. How to create a comment in each method what are the formats of Docstring all are mentioned in this section. Testing the public method of this project using unittest in python is something I explored and it gives ac brief idea that developer should use it for unittesting before releasing it into testing environment.
 
-
+These are Docstring method: In this project I used Numpydoc format.
 - [Google](https://google.github.io/styleguide/pyguide.html)
 - [Sphinx or reStructuredText](http://sphinx-doc.org/markup/desc.html)
 - [Numpydoc](https://numpydoc.readthedocs.io/en/latest/format.html)
 - [Epytext](https://epytext.readthedocs.io/en/latest/format.html)
+
+
 
 
