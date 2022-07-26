@@ -23,14 +23,10 @@ Once the chrome automatic search the term "mobile", it gives bunch of mobile pho
 ## Milestone 4 - Documentation and testing
 This milestone is very crucial to implement. This section gives the depth knowladge of Docsting in python. How to create a comment in each method what are the formats of Docstring all are mentioned in this section.
 
-<a href="https://google.github.io/styleguide/pyguide.html" target="_blank">Google</a>
-<a href="http://sphinx-doc.org/markup/desc.html" target="_blank">sphinx or restructuredtext</a>
-<a href="https://numpydoc.readthedocs.io/en/latest/format.html" target="_blank">Numpy Docs</a>
-<a href="https://epytext.readthedocs.io/en/latest/format.html" target="_blank">epytext</a>
 
-
-
-
-
+- [Google](https://google.github.io/styleguide/pyguide.html)
+- [Sphinx or reStructuredText](http://sphinx-doc.org/markup/desc.html)
+- [Numpydoc](https://numpydoc.readthedocs.io/en/latest/format.html)
+- [Epytext](https://epytext.readthedocs.io/en/latest/format.html)
 
 
