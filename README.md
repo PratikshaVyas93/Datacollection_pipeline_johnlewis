@@ -11,6 +11,8 @@ From now onwards, the file describe each and every milestone of this project wit
 I chose https://www.johnlewis.com website to satisfy the requirement of my first milestone. And of course, this website contains various type of data.
 
 ## Milestone 2 - Prototype finding the indivisual page for each entry
-In this milestone I explored the python OOPS concept and tried to implement project in the same. To scrape the data it requires selenium library and specific browser in my case, I used chrome. and using selenium I import the chromedriver. to download the chromedriver find the below link.
+In this milestone I explored the python OOPS concept and tried to implement project in the same. To scrape the data it requires selenium library and specific browser in my case, I used chrome. and using selenium I imported the chromedriver module. To download the chromedriver find the below link.
 https://chromedriver.chromium.org/downloads
+
+once the installation is done, the next task is to navigate to the website, by passing the cookies and automatic search content "mobile" using selenium scraper code.
 
