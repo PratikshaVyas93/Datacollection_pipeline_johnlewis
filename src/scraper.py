@@ -10,7 +10,6 @@ Purpose : John's lewis products data collection pipeline
 Importing Libraries
 """
 ################################################################################################################
-from functools import total_ordering
 from requests import options
 from selenium import webdriver
 from time import sleep
@@ -96,6 +95,7 @@ class Scraper():
             search_name = self.__get_each_element("//input[@name='search-term']")
             search_name.send_keys(self.search_name)  
             WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))).click()
+            sleep(2)
             self.get_product()      
         except AttributeError:
             pass
@@ -137,6 +137,8 @@ class Scraper():
         product_list= []
         try:
             mobile_categories_container = self.__get_elements_list("//div[@class='ProductGrid_product-grid__product__oD7Jq']") 
+            print("mobile_categories_container",mobile_categories_container)
+            
             if len(mobile_categories_container) != 0:
                 for mobile in mobile_categories_container:
                     u_id = uuid.uuid4()
@@ -146,7 +148,8 @@ class Scraper():
                     product_id = unique_productid[-1]
                     mobile_info_title = mobile.find_element(by=By.XPATH, value=".//span[@class='title_title__desc__ZCdyp title_title__desc--four-lines__7hRtk']").text
                     mobile_info_price = mobile.find_element(by=By.XPATH, value=".//span[@class='price_price__now__3B4yM']").text
-                    mobile_info_src = mobile.find_element(by=By.XPATH, value=".//img[@class='image_image__jhaxk']").get_attribute("src")     
+                    mobile_info_src = mobile.find_element(by=By.XPATH, value=".//img[@class='image_image__jhaxk']").get_attribute("src")    
+
                     mobile_container = {
                         'UUID':u_unique_id,
                         'product_id':product_id,
