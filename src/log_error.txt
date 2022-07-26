@@ -1481,3 +1481,59 @@ Stacktrace:
 14  chromedriver                        0x00000001047ff92c chromedriver + 4503852
 15  libsystem_pthread.dylib             0x00000001bb8c1240 _pthread_start + 148
 16  libsystem_pthread.dylib             0x00000001bb8bc024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+0   chromedriver                        0x0000000101339170 chromedriver + 4477296
+1   chromedriver                        0x00000001012d0c18 chromedriver + 4049944
+2   chromedriver                        0x0000000100f22d40 chromedriver + 191808
+3   chromedriver                        0x0000000100f1096c chromedriver + 117100
+4   chromedriver                        0x0000000100f1013c chromedriver + 115004
+5   chromedriver                        0x0000000100f0f790 chromedriver + 112528
+6   chromedriver                        0x0000000100f0e89c chromedriver + 108700
+7   chromedriver                        0x0000000100f0ed38 chromedriver + 109880
+8   chromedriver                        0x0000000100f1c220 chromedriver + 164384
+9   chromedriver                        0x0000000100f292d4 chromedriver + 217812
+10  chromedriver                        0x0000000100f0efdc chromedriver + 110556
+11  chromedriver                        0x0000000100f28f4c chromedriver + 216908
+12  chromedriver                        0x0000000100f7ab70 chromedriver + 551792
+13  chromedriver                        0x0000000100f46f58 chromedriver + 339800
+14  chromedriver                        0x000000010130ebd4 chromedriver + 4303828
+15  chromedriver                        0x0000000101313094 chromedriver + 4321428
+16  chromedriver                        0x0000000101317600 chromedriver + 4339200
+17  chromedriver                        0x0000000101313af4 chromedriver + 4324084
+18  chromedriver                        0x00000001012f252c chromedriver + 4187436
+19  chromedriver                        0x000000010132b488 chromedriver + 4420744
+20  chromedriver                        0x000000010132b5ec chromedriver + 4421100
+21  chromedriver                        0x000000010133f92c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x000000018762d240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000187628024 thread_start + 8
+Message: unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.134)
+Stacktrace:
+0   chromedriver                        0x0000000100d89170 chromedriver + 4477296
+1   chromedriver                        0x0000000100d20c18 chromedriver + 4049944
+2   chromedriver                        0x0000000100972d40 chromedriver + 191808
+3   chromedriver                        0x000000010096096c chromedriver + 117100
+4   chromedriver                        0x000000010096013c chromedriver + 115004
+5   chromedriver                        0x000000010095f790 chromedriver + 112528
+6   chromedriver                        0x000000010095e89c chromedriver + 108700
+7   chromedriver                        0x000000010095ed38 chromedriver + 109880
+8   chromedriver                        0x000000010096c220 chromedriver + 164384
+9   chromedriver                        0x00000001009792d4 chromedriver + 217812
+10  chromedriver                        0x000000010095efdc chromedriver + 110556
+11  chromedriver                        0x0000000100978f4c chromedriver + 216908
+12  chromedriver                        0x00000001009cab70 chromedriver + 551792
+13  chromedriver                        0x0000000100996f58 chromedriver + 339800
+14  chromedriver                        0x0000000100d5ebd4 chromedriver + 4303828
+15  chromedriver                        0x0000000100d63094 chromedriver + 4321428
+16  chromedriver                        0x0000000100d67600 chromedriver + 4339200
+17  chromedriver                        0x0000000100d63af4 chromedriver + 4324084
+18  chromedriver                        0x0000000100d4252c chromedriver + 4187436
+19  chromedriver                        0x0000000100d7b488 chromedriver + 4420744
+20  chromedriver                        0x0000000100d7b5ec chromedriver + 4421100
+21  chromedriver                        0x0000000100d8f92c chromedriver + 4503852
+22  libsystem_pthread.dylib             0x000000018762d240 _pthread_start + 148
+23  libsystem_pthread.dylib             0x0000000187628024 thread_start + 8

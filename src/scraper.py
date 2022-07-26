@@ -10,6 +10,7 @@ Purpose : John's lewis products data collection pipeline
 Importing Libraries
 """
 ################################################################################################################
+from functools import total_ordering
 from requests import options
 from selenium import webdriver
 from time import sleep
@@ -106,9 +107,25 @@ class Scraper():
         """
             This method is to get the product info amd sava data into json format
         """
+        self.scroll_page_down()
+        sleep(2)
         product_info_container = []
         product_info_container = self.get_product_information()
-        self.save_json_data(product_info_container)
+        total_record_downloaded = self.save_json_data(product_info_container)
+        print(f"Total {total_record_downloaded} record/s downloaded !!")
+
+    def scroll_page_down(self):
+        last_height = self.driver.execute_script("return document.body.scrollHeight")
+        while True:
+            # Scroll down to bottom
+            self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            # Wait to load page
+            sleep(2)
+            # Calculate new scroll height and compare with last scroll height
+            new_height = self.driver.execute_script("return document.body.scrollHeight")
+            if new_height == last_height:
+                break
+            last_height = new_height
 
     def get_product_information(self) -> list:
         """
@@ -120,7 +137,6 @@ class Scraper():
         product_list= []
         try:
             mobile_categories_container = self.__get_elements_list("//div[@class='ProductGrid_product-grid__product__oD7Jq']") 
-            print(mobile_categories_container,"mobile_categories_container")
             if len(mobile_categories_container) != 0:
                 for mobile in mobile_categories_container:
                     u_id = uuid.uuid4()
@@ -157,8 +173,9 @@ class Scraper():
                 product_container_data : list
                     This parameter is a list type and it contains all information of each product
         """
+        total_count_record = len(product_container_data)
+        print(f"Total products count : {total_count_record}")
 
-        print(f"Total products count : {len(product_container_data)}")
         if len(product_container_data) != 0:
             for item in range(len(product_container_data)):
                 product_id = product_container_data[item]['product_id'] 
@@ -171,6 +188,8 @@ class Scraper():
                 self.download_images(saving_image_path,product_image_src,product_id)  
         else:
             print(f"msg : Product container is empty : {len(product_container_data)}")
+
+        return total_count_record
 
     def write_data_to_json_file(self,valid_path : str,valid_data : dict):
         """
