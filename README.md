@@ -9,3 +9,8 @@ Technologies that are used in this project : Python and its modules (boto3, math
 From now onwards, the file describe each and every milestone of this project with detail descriptions.
 ## Milestone 1 - Decide the website that I am passionate about
 I chose https://www.johnlewis.com website to satisfy the requirement of my first milestone. And of course, this website contains various type of data.
+
+## Milestone 2 - Prototype finding the indivisual page for each entry
+In this milestone I explored the python OOPS concept and tried to implement project in the same. To scrape the data it requires selenium library and specific browser in my case, I used chrome. and using selenium I import the chromedriver. to download the chromedriver find the below link.
+https://chromedriver.chromium.org/downloads
+
