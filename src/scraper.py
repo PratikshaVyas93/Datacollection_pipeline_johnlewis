@@ -12,6 +12,7 @@ Importing Libraries
 ################################################################################################################
 from requests import options
 from selenium import webdriver
+from aws_boto import AWSBoto
 from time import sleep
 from logger import Logger
 from selenium.webdriver.common.by import By
@@ -42,6 +43,7 @@ class Scraper():
         self.driver = webdriver.Chrome(service=self.service, options=options)
         self._create_metadata_folders(self.folder_name)
         self.create_folders(self.image_folder_name)
+        self.aws = AWSBoto()
         
     @staticmethod
     def _create_metadata_folders(directory_name):
@@ -167,7 +169,7 @@ class Scraper():
             Logger.logrecord(str(e))        
         return product_list
 
-    def save_json_data(self,product_container_data : list):
+    def save_json_data(self,product_container_data : list)-> int:
         """
             This method is used to save the json data. And it gives the count of product
 
@@ -175,6 +177,10 @@ class Scraper():
             ---------
                 product_container_data : list
                     This parameter is a list type and it contains all information of each product
+            Returns
+            --------
+                total_count_record : int
+                    This will return count of total record
         """
         total_count_record = len(product_container_data)
         print(f"Total products count : {total_count_record}")
@@ -234,6 +240,9 @@ class Scraper():
         try:
             urllib.request.urlretrieve(product_image_link, image_path)
             print("msg : Image Downloaded")
+            s3_url = self.aws.upload_object_s3(image_path, product_id)
+            return s3_url
+
         except Exception as e:
             Logger.logrecord(str(e))
             print(f"msg : Error while downloading the images {str(e)}")
