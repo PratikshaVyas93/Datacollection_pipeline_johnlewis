@@ -24,6 +24,7 @@ import uuid
 import json
 import os
 import urllib.request
+import pandas as pd
 
 class Scraper():
     """
@@ -77,8 +78,9 @@ class Scraper():
         self.driver.get(url) 
         sleep(2)  
         self.__accept_cookies()
-        self.__search_on_searchbar()
         sleep(2)
+        self.__search_on_searchbar()
+        sleep(3)
         
     def __accept_cookies(self):
         """
@@ -97,7 +99,7 @@ class Scraper():
             search_name = self.__get_each_element("//input[@name='search-term']")
             search_name.send_keys(self.search_name)  
             WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))).click()
-            sleep(2)
+            sleep(3)
             self.get_product()      
         except AttributeError:
             pass
@@ -140,7 +142,7 @@ class Scraper():
         try:
             mobile_categories_container = self.__get_elements_list("//div[@class='ProductGrid_product-grid__product__oD7Jq']") 
             print("mobile_categories_container",mobile_categories_container)
-            
+            char_to_replace = {',': '','\\': '','"': '','",': ''}
             if len(mobile_categories_container) != 0:
                 for mobile in mobile_categories_container:
                     u_id = uuid.uuid4()
@@ -150,14 +152,15 @@ class Scraper():
                     product_id = unique_productid[-1]
                     mobile_info_title = mobile.find_element(by=By.XPATH, value=".//span[@class='title_title__desc__ZCdyp title_title__desc--four-lines__7hRtk']").text
                     mobile_info_price = mobile.find_element(by=By.XPATH, value=".//span[@class='price_price__now__3B4yM']").text
+                    mobile_info_price = mobile_info_price.replace('£', '')
                     mobile_info_src = mobile.find_element(by=By.XPATH, value=".//img[@class='image_image__jhaxk']").get_attribute("src")    
 
                     mobile_container = {
                         'UUID':u_unique_id,
                         'product_id':product_id,
-                        'title':mobile_info_title,
-                        'price':mobile_info_price,
-                        'src':mobile_info_src
+                        'product_title':mobile_info_title,
+                        'product_price':mobile_info_price,
+                        'product_src':mobile_info_src
                     }
                     product_list.append(mobile_container)
             else:
@@ -184,22 +187,26 @@ class Scraper():
         """
         total_count_record = len(product_container_data)
         print(f"Total products count : {total_count_record}")
-
+        df_data = pd.DataFrame(product_container_data)
+        self.aws.save_data_RDS(df_data)
         if len(product_container_data) != 0:
             for item in range(len(product_container_data)):
                 product_id = product_container_data[item]['product_id'] 
-                product_image_src = product_container_data[item]['src']
+                product_image_src = product_container_data[item]['product_src']
                 current_directory = os.getcwd() 
                 saving_data_path = os.path.join(current_directory,self.folder_name,product_id)
                 self._create_metadata_folders(saving_data_path)
                 self.write_data_to_json_file(saving_data_path,product_container_data[item])
                 saving_image_path = os.path.join(current_directory,self.folder_name,self.image_folder_name)
-                self.download_images(saving_image_path,product_image_src,product_id)  
+                self.download_images(saving_image_path,product_image_src,product_id)
         else:
             print(f"msg : Product container is empty : {len(product_container_data)}")
 
         return total_count_record
 
+  
+
+        
     def write_data_to_json_file(self,valid_path : str,valid_data : dict):
         """
             This method is used to save the data into data.json file 
@@ -217,10 +224,11 @@ class Scraper():
         try:
             with open(create_file_saving_path, 'w') as fo:
                 json.dump(valid_data, fo)
-                print(f"msg: Data dumped !!")     
+                print(f"msg: Data dumped !!")    
         except IOError as e:
             Logger.logrecord(str(e))
             print(f"msg : Error while dumping data on {create_file_saving_path} file")
+
 
     def download_images(self,images_folder_path : str,product_image_link: str,product_id : str):
         """

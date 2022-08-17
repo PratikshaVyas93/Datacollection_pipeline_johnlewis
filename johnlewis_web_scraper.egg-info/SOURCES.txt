@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+johnlewis_web_scraper.egg-info/PKG-INFO
+johnlewis_web_scraper.egg-info/SOURCES.txt
+johnlewis_web_scraper.egg-info/dependency_links.txt
+johnlewis_web_scraper.egg-info/requires.txt
+johnlewis_web_scraper.egg-info/top_level.txt
+src/__init__.py
+src/aws_boto.py
+src/logger.py
+src/scraper.py
+tests/__init__.py
+tests/test_scraper.py

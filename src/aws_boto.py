@@ -1,6 +1,17 @@
+from operator import index
+from textwrap import indent
 import boto3
+from sqlalchemy import create_engine
+import pandas as pd
 
-S3_BUCKET_NAME = 'johnlewisdpbucket'
+S3_BUCKET_NAME = 'my-bucket-johnlewis'
+HOST = 'johnlewis-db.c1rptlndtetd.us-east-1.rds.amazonaws.com'
+DBAPI = 'psycopg2'
+USER = 'postgres'
+PASSWORD = 'Pratiksha'
+PORT = 5432
+DATABASE = 'postgres'
+DATABASE_TYPE = 'postgresql'
 
 class AWSBoto:
 
@@ -28,4 +39,17 @@ class AWSBoto:
             s3_client.upload_file(file_name, S3_BUCKET_NAME, object_name)
         
         file_url_to_upload = f's3://{S3_BUCKET_NAME}/{object_name}'
-        return file_url_to_upload    
+        return file_url_to_upload  
+
+    def save_data_RDS(self,Data_list):
+      engine = create_engine(f"{DATABASE_TYPE}+{DBAPI}://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}")
+      print(f"Connecting to Database : {DATABASE_TYPE}")
+      engine.connect()
+      print("Connection established")
+      Data_list.to_sql('product_informations', engine, index=True)
+      print("Data Table is created !!")
+      sql_query = f"SELECT * FROM product_informations"
+      print("Fetching the data")
+      fetched_data = engine.execute(sql_query).fetchall()
+      print("Data fetching done !!")
+      print(fetched_data)
