@@ -3,6 +3,7 @@ from textwrap import indent
 import boto3
 from sqlalchemy import create_engine
 import pandas as pd
+import sqlalchemy
 
 S3_BUCKET_NAME = 'my-bucket-johnlewis'
 HOST = 'johnlewis-db.c1rptlndtetd.us-east-1.rds.amazonaws.com'
@@ -46,10 +47,18 @@ class AWSBoto:
       print(f"Connecting to Database : {DATABASE_TYPE}")
       engine.connect()
       print("Connection established")
-      Data_list.to_sql('product_informations', engine, index=True)
-      print("Data Table is created !!")
-      sql_query = f"SELECT * FROM product_informations"
-      print("Fetching the data")
-      fetched_data = engine.execute(sql_query).fetchall()
-      print("Data fetching done !!")
-      print(fetched_data)
+      print("Checking the table product_informations is exists or not !!!")
+      if sqlalchemy.inspect(engine).has_table("product_informations"):
+        print("Table product_informations is exists")
+        sql = sqlalchemy.text("SELECT pi.product_id FROM product_informations as pi")
+        result = pd.read_sql_query(sql, engine)
+        unique_product_id_list = result['product_id'].tolist()
+      print("Checking if records are unique or not")
+      for item in Data_list:
+        rds_entry = pd.DataFrame([item])
+        if item["product_id"] not in unique_product_id_list:
+          print("Unique records found")
+          print("Inserting unique record/s in product_informations table !!")
+          rds_entry.to_sql('product_informations', engine, if_exists = 'append', index=False)
+          print("Record/s inserted successfully")
+      

@@ -20,6 +20,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 import uuid
 import json
 import os
@@ -33,7 +34,7 @@ class Scraper():
             and call the method to create folder.
 
     """
-    def __init__(self): 
+    def __init__(self,headless:bool = False): 
         driver_path ="/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/chromedriver"
         self.driver_path = driver_path
         self.search_name = "mobile"
@@ -41,7 +42,19 @@ class Scraper():
         self.image_folder_name = "images"
         self.service = Service(self.driver_path)
         options = Options()
-        self.driver = webdriver.Chrome(service=self.service, options=options)
+        if headless:
+            chrome_options = Options()
+            options.add_argument("--no-sandbox") 
+            options.add_argument("--headless")
+            options.add_argument("--disable-dev-shm-usage")
+            options.add_argument("--disable-setuid-sandbox") 
+            options.add_argument('--disable-gpu')
+            options.add_argument("user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.101 Safari/537.36'")
+            options.add_argument("window-size=1920,1080")
+            self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+        else:
+            self.driver = webdriver.Chrome(ChromeDriverManager().install())
+        #self.driver = webdriver.Chrome(service=self.service, options=options)
         self._create_metadata_folders(self.folder_name)
         self.create_folders(self.image_folder_name)
         self.aws = AWSBoto()
@@ -81,12 +94,15 @@ class Scraper():
         sleep(2)
         self.__search_on_searchbar()
         sleep(3)
+
         
     def __accept_cookies(self):
         """
             This method is used to accept the cookies
         """
         try:
+            ad_delete_by_clicking = self.__get_each_element("//*[@class='modal__close']") 
+            ad_delete_by_clicking.click()
             accept_cookies_by_clicking = self.__get_each_element("//*[@data-test='allow-all']") 
             accept_cookies_by_clicking.click()
         except AttributeError:
@@ -150,13 +166,13 @@ class Scraper():
                     mobile_product_href = mobile.find_element(by=By.XPATH, value=".//a[@class='image_imageLink__1Znsz product-card_c-product-card__image__bO3kW product__image']").get_attribute("href")
                     unique_productid = mobile_product_href.split("/")
                     product_id = unique_productid[-1]
-                    mobile_info_title = mobile.find_element(by=By.XPATH, value=".//span[@class='title_title__desc__ZCdyp title_title__desc--four-lines__7hRtk']").text
+                    mobile_info_title = mobile.find_element(by=By.XPATH, value=".//span[@class='title_title__desc__ZCdyp title_title__desc--three-lines__VHz1t title_title__desc--branded__8SluU']").text
                     mobile_info_price = mobile.find_element(by=By.XPATH, value=".//span[@class='price_price__now__3B4yM']").text
                     mobile_info_price = mobile_info_price.replace('£', '')
                     mobile_info_src = mobile.find_element(by=By.XPATH, value=".//img[@class='image_image__jhaxk']").get_attribute("src")    
 
                     mobile_container = {
-                        'UUID':u_unique_id,
+                        'uuid':u_unique_id,
                         'product_id':product_id,
                         'product_title':mobile_info_title,
                         'product_price':mobile_info_price,
@@ -187,8 +203,8 @@ class Scraper():
         """
         total_count_record = len(product_container_data)
         print(f"Total products count : {total_count_record}")
-        df_data = pd.DataFrame(product_container_data)
-        self.aws.save_data_RDS(df_data)
+        #df_data = pd.DataFrame(product_container_data)
+        self.aws.save_data_RDS(product_container_data)
         if len(product_container_data) != 0:
             for item in range(len(product_container_data)):
                 product_id = product_container_data[item]['product_id'] 
@@ -264,6 +280,6 @@ class Scraper():
         return elements  
     
 if __name__ == "__main__":
-    scraper = Scraper()
+    scraper = Scraper(headless=True)
     scraper.load_page('https://www.johnlewis.com')
 

@@ -9,5 +9,5 @@ setup(
     author='Pratiksha',
     license='MIT',
     packages=find_packages(),
-    install_requires=['pandas', 'selenium','sqlalchemy','boto3','psycopg2-binary'],
+    install_requires=['pandas', 'selenium','sqlalchemy','boto3','psycopg2-binary','docker'],
 )
