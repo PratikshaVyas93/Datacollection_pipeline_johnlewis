@@ -280,3 +280,49 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1661962168379	geckodriver	INFO	Listening on 127.0.0.1:50480
+1661962168905	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "50481" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/00/gjg35v2952q6d4cnn6wnljy80000gn/T/rust_mozprofileIg7jym"
+*** You are running in headless mode.
+1661962169519	Marionette	INFO	Marionette enabled
+1661962169549	Marionette	INFO	Listening on port 50489
+WebDriver BiDi listening on ws://localhost:50481
+2022-08-31 17:09:29.565 plugin-container[5948:43254] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-31 17:09:29.566 plugin-container[5948:43254] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-31 17:09:29.603 plugin-container[5948:43254] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-31 17:09:29.603 plugin-container[5948:43254] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-31 17:09:29.603 plugin-container[5948:43287] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-31 17:09:29.603 plugin-container[5948:43287] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 50489
+1661962169694	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/00/gjg35v2952q6d4cnn6wnljy80000gn/T/rust_mozprofileIg7jym/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50481/devtools/browser/57ba99d9-3d37-4a97-957f-8b7761a0428e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.johnlewis.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.johnlewis.com."
+JavaScript warning: https://www.johnlewis.com/7eFnvpRHnVmHBK66DMGT/VEDaX0bmEpiw/WSo8YwE/NH/xbYFFMNEE, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.johnlewis.com."
+JavaScript warning: https://www.johnlewis.com/7eFnvpRHnVmHBK66DMGT/VEDaX0bmEpiw/WSo8YwE/NH/xbYFFMNEE, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661962358825	geckodriver	INFO	Listening on 127.0.0.1:50721
+1661962359337	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--headless" "--remote-debugging-port" "50722" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/00/gjg35v2952q6d4cnn6wnljy80000gn/T/rust_mozprofilegCyIOK"
+*** You are running in headless mode.
+1661962359604	Marionette	INFO	Marionette enabled
+1661962359611	Marionette	INFO	Listening on port 50729
+WebDriver BiDi listening on ws://localhost:50722
+2022-08-31 17:12:39.613 plugin-container[6245:45260] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-31 17:12:39.614 plugin-container[6245:45260] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-31 17:12:39.617 plugin-container[6245:45260] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-31 17:12:39.617 plugin-container[6245:45260] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-31 17:12:39.618 plugin-container[6245:45258] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-31 17:12:39.618 plugin-container[6245:45258] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 50729
+1661962359750	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/00/gjg35v2952q6d4cnn6wnljy80000gn/T/rust_mozprofilegCyIOK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50722/devtools/browser/c6271994-fe34-45ce-b998-9a5d10c50ef3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.johnlewis.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.johnlewis.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.johnlewis.com."
+JavaScript warning: https://www.johnlewis.com/7eFnvpRHnVmHBK66DMGT/VEDaX0bmEpiw/WSo8YwE/NH/xbYFFMNEE, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.johnlewis.com."
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript warning: https://www.johnlewis.com/7eFnvpRHnVmHBK66DMGT/VEDaX0bmEpiw/WSo8YwE/NH/xbYFFMNEE, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

@@ -2,6 +2,6 @@ selenium
 webdriver_manager
 pandas
 sqlalchemy
-psycopg2-binary
+psycopg2
 boto3
 docker
