@@ -10,23 +10,27 @@ Purpose : John's lewis products data collection pipeline
 Importing Libraries
 """
 ################################################################################################################
+from re import S
 from requests import options
 from selenium import webdriver
+from selenium.webdriver import Firefox
+from selenium.webdriver.firefox.options import Options
 from aws_boto import AWSBoto
 from time import sleep
 from logger import Logger
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+# from webdriver_manager.firefox import ChromeDriverManager
 import uuid
 import json
 import os
 import urllib.request
 import pandas as pd
-
+import psutil
 class Scraper():
     """
             This class initialises the webscraper, that collect the data and save it locally. 
@@ -34,30 +38,23 @@ class Scraper():
             and call the method to create folder.
 
     """
-    def __init__(self,headless:bool = False): 
-        driver_path ="/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/chromedriver"
+    def __init__(self): 
+        driver_path ="/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/geckodriver"
+        #('/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/geckodriver')
         self.driver_path = driver_path
         self.search_name = "mobile"
         self.folder_name = "raw_data"
         self.image_folder_name = "images"
-        self.service = Service(self.driver_path)
-        options = Options()
-        if headless:
-            chrome_options = Options()
-            options.add_argument("--no-sandbox") 
-            options.add_argument("--headless")
-            options.add_argument("--disable-dev-shm-usage")
-            options.add_argument("--disable-setuid-sandbox") 
-            options.add_argument('--disable-gpu')
-            options.add_argument("user-agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.101 Safari/537.36'")
-            options.add_argument("window-size=1920,1080")
-            self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
-        else:
-            self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        #self.driver = webdriver.Chrome(service=self.service, options=options)
+        #self.driver = Service("/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/geckodriver")
+        #self.user_agent= "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15"
+        firefox_option = Options()
+        firefox_option.add_argument("--headless") 
+        self.driver = Firefox(options=firefox_option)
+        #self.driver = Firefox()
         self._create_metadata_folders(self.folder_name)
         self.create_folders(self.image_folder_name)
         self.aws = AWSBoto()
+       
         
     @staticmethod
     def _create_metadata_folders(directory_name):
@@ -101,8 +98,6 @@ class Scraper():
             This method is used to accept the cookies
         """
         try:
-            ad_delete_by_clicking = self.__get_each_element("//*[@class='modal__close']") 
-            ad_delete_by_clicking.click()
             accept_cookies_by_clicking = self.__get_each_element("//*[@data-test='allow-all']") 
             accept_cookies_by_clicking.click()
         except AttributeError:
@@ -133,7 +128,7 @@ class Scraper():
         product_info_container = self.get_product_information()
         total_record_downloaded = self.save_json_data(product_info_container)
         print(f"Total {total_record_downloaded} record/s downloaded !!")
-
+       
     def scroll_page_down(self):
         last_height = self.driver.execute_script("return document.body.scrollHeight")
         while True:
@@ -157,8 +152,6 @@ class Scraper():
         product_list= []
         try:
             mobile_categories_container = self.__get_elements_list("//div[@class='ProductGrid_product-grid__product__oD7Jq']") 
-            print("mobile_categories_container",mobile_categories_container)
-            char_to_replace = {',': '','\\': '','"': '','",': ''}
             if len(mobile_categories_container) != 0:
                 for mobile in mobile_categories_container:
                     u_id = uuid.uuid4()
@@ -277,9 +270,9 @@ class Scraper():
 
     def __get_elements_list(self, places_locate) -> list:
         elements = self.driver.find_elements(by=By.XPATH, value=places_locate)
-        return elements  
-    
-if __name__ == "__main__":
-    scraper = Scraper(headless=True)
-    scraper.load_page('https://www.johnlewis.com')
+        return elements
 
+if __name__ == "__main__":
+    scraper = Scraper()
+    scraper.load_page('https://www.johnlewis.com')
+    

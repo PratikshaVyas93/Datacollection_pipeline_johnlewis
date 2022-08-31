@@ -4107,3 +4107,945 @@ Stacktrace:
 18  chromedriver                        0x0000000104eb10f0 chromedriver + 3854576
 19  libsystem_pthread.dylib             0x00000001831f1240 _pthread_start + 148
 20  libsystem_pthread.dylib             0x00000001831ec024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='modal__close']"}
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010086aae0 chromedriver + 3828448
+1   chromedriver                        0x00000001007fff1c chromedriver + 3391260
+2   chromedriver                        0x00000001004f8fcc chromedriver + 217036
+3   chromedriver                        0x0000000100528b7c chromedriver + 412540
+4   chromedriver                        0x0000000100551b2c chromedriver + 580396
+5   chromedriver                        0x000000010051e010 chromedriver + 368656
+6   chromedriver                        0x000000010084039c chromedriver + 3654556
+7   chromedriver                        0x0000000100843c4c chromedriver + 3669068
+8   chromedriver                        0x000000010084814c chromedriver + 3686732
+9   chromedriver                        0x0000000100844654 chromedriver + 3671636
+10  chromedriver                        0x0000000100822b40 chromedriver + 3533632
+11  chromedriver                        0x000000010085c414 chromedriver + 3769364
+12  chromedriver                        0x000000010085c578 chromedriver + 3769720
+13  chromedriver                        0x00000001008710f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (305, 82). Other element would receive the click: <div data-test="cookie-overlay" class="overlay-2KhaK"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010086aae0 chromedriver + 3828448
+1   chromedriver                        0x00000001007fff1c chromedriver + 3391260
+2   chromedriver                        0x00000001004f8fcc chromedriver + 217036
+3   chromedriver                        0x000000010052edf4 chromedriver + 437748
+4   chromedriver                        0x000000010052d01c chromedriver + 430108
+5   chromedriver                        0x000000010052ae38 chromedriver + 421432
+6   chromedriver                        0x0000000100529dc4 chromedriver + 417220
+7   chromedriver                        0x000000010051f91c chromedriver + 375068
+8   chromedriver                        0x000000010051f308 chromedriver + 373512
+9   chromedriver                        0x0000000100551b2c chromedriver + 580396
+10  chromedriver                        0x000000010051e010 chromedriver + 368656
+11  chromedriver                        0x000000010084039c chromedriver + 3654556
+12  chromedriver                        0x0000000100843c4c chromedriver + 3669068
+13  chromedriver                        0x000000010084814c chromedriver + 3686732
+14  chromedriver                        0x0000000100844654 chromedriver + 3671636
+15  chromedriver                        0x0000000100822b40 chromedriver + 3533632
+16  chromedriver                        0x000000010085c414 chromedriver + 3769364
+17  chromedriver                        0x000000010085c578 chromedriver + 3769720
+18  chromedriver                        0x00000001008710f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element is not clickable at point (672, 404)
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010129aae0 chromedriver + 3828448
+1   chromedriver                        0x000000010122ff1c chromedriver + 3391260
+2   chromedriver                        0x0000000100f28fcc chromedriver + 217036
+3   chromedriver                        0x0000000100f5edf4 chromedriver + 437748
+4   chromedriver                        0x0000000100f5d01c chromedriver + 430108
+5   chromedriver                        0x0000000100f5ae38 chromedriver + 421432
+6   chromedriver                        0x0000000100f59dc4 chromedriver + 417220
+7   chromedriver                        0x0000000100f4f91c chromedriver + 375068
+8   chromedriver                        0x0000000100f4f308 chromedriver + 373512
+9   chromedriver                        0x0000000100f81b2c chromedriver + 580396
+10  chromedriver                        0x0000000100f4e010 chromedriver + 368656
+11  chromedriver                        0x000000010127039c chromedriver + 3654556
+12  chromedriver                        0x0000000101273c4c chromedriver + 3669068
+13  chromedriver                        0x000000010127814c chromedriver + 3686732
+14  chromedriver                        0x0000000101274654 chromedriver + 3671636
+15  chromedriver                        0x0000000101252b40 chromedriver + 3533632
+16  chromedriver                        0x000000010128c414 chromedriver + 3769364
+17  chromedriver                        0x000000010128c578 chromedriver + 3769720
+18  chromedriver                        0x00000001012a10f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (43, 128). Other element would receive the click: <div data-test="cookie-overlay" class="overlay-2KhaK"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010129aae0 chromedriver + 3828448
+1   chromedriver                        0x000000010122ff1c chromedriver + 3391260
+2   chromedriver                        0x0000000100f28fcc chromedriver + 217036
+3   chromedriver                        0x0000000100f5edf4 chromedriver + 437748
+4   chromedriver                        0x0000000100f5d01c chromedriver + 430108
+5   chromedriver                        0x0000000100f5ae38 chromedriver + 421432
+6   chromedriver                        0x0000000100f59dc4 chromedriver + 417220
+7   chromedriver                        0x0000000100f4f91c chromedriver + 375068
+8   chromedriver                        0x0000000100f4f308 chromedriver + 373512
+9   chromedriver                        0x0000000100f81b2c chromedriver + 580396
+10  chromedriver                        0x0000000100f4e010 chromedriver + 368656
+11  chromedriver                        0x000000010127039c chromedriver + 3654556
+12  chromedriver                        0x0000000101273c4c chromedriver + 3669068
+13  chromedriver                        0x000000010127814c chromedriver + 3686732
+14  chromedriver                        0x0000000101274654 chromedriver + 3671636
+15  chromedriver                        0x0000000101252b40 chromedriver + 3533632
+16  chromedriver                        0x000000010128c414 chromedriver + 3769364
+17  chromedriver                        0x000000010128c578 chromedriver + 3769720
+18  chromedriver                        0x00000001012a10f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='modal__close']"}
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000100b66ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000100afbf1c chromedriver + 3391260
+2   chromedriver                        0x00000001007f4fcc chromedriver + 217036
+3   chromedriver                        0x0000000100824b7c chromedriver + 412540
+4   chromedriver                        0x000000010084db2c chromedriver + 580396
+5   chromedriver                        0x000000010081a010 chromedriver + 368656
+6   chromedriver                        0x0000000100b3c39c chromedriver + 3654556
+7   chromedriver                        0x0000000100b3fc4c chromedriver + 3669068
+8   chromedriver                        0x0000000100b4414c chromedriver + 3686732
+9   chromedriver                        0x0000000100b40654 chromedriver + 3671636
+10  chromedriver                        0x0000000100b1eb40 chromedriver + 3533632
+11  chromedriver                        0x0000000100b58414 chromedriver + 3769364
+12  chromedriver                        0x0000000100b58578 chromedriver + 3769720
+13  chromedriver                        0x0000000100b6d0f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (282, 82). Other element would receive the click: <div data-test="cookie-overlay" class="overlay-2KhaK"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000100b66ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000100afbf1c chromedriver + 3391260
+2   chromedriver                        0x00000001007f4fcc chromedriver + 217036
+3   chromedriver                        0x000000010082adf4 chromedriver + 437748
+4   chromedriver                        0x000000010082901c chromedriver + 430108
+5   chromedriver                        0x0000000100826e38 chromedriver + 421432
+6   chromedriver                        0x0000000100825dc4 chromedriver + 417220
+7   chromedriver                        0x000000010081b91c chromedriver + 375068
+8   chromedriver                        0x000000010081b308 chromedriver + 373512
+9   chromedriver                        0x000000010084db2c chromedriver + 580396
+10  chromedriver                        0x000000010081a010 chromedriver + 368656
+11  chromedriver                        0x0000000100b3c39c chromedriver + 3654556
+12  chromedriver                        0x0000000100b3fc4c chromedriver + 3669068
+13  chromedriver                        0x0000000100b4414c chromedriver + 3686732
+14  chromedriver                        0x0000000100b40654 chromedriver + 3671636
+15  chromedriver                        0x0000000100b1eb40 chromedriver + 3533632
+16  chromedriver                        0x0000000100b58414 chromedriver + 3769364
+17  chromedriver                        0x0000000100b58578 chromedriver + 3769720
+18  chromedriver                        0x0000000100b6d0f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='modal__close']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000102cf2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000102c87f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102980fcc chromedriver + 217036
+3   chromedriver                        0x00000001029b0b7c chromedriver + 412540
+4   chromedriver                        0x00000001029d9b2c chromedriver + 580396
+5   chromedriver                        0x00000001029a6010 chromedriver + 368656
+6   chromedriver                        0x0000000102cc839c chromedriver + 3654556
+7   chromedriver                        0x0000000102ccbc4c chromedriver + 3669068
+8   chromedriver                        0x0000000102cd014c chromedriver + 3686732
+9   chromedriver                        0x0000000102ccc654 chromedriver + 3671636
+10  chromedriver                        0x0000000102caab40 chromedriver + 3533632
+11  chromedriver                        0x0000000102ce4414 chromedriver + 3769364
+12  chromedriver                        0x0000000102ce4578 chromedriver + 3769720
+13  chromedriver                        0x0000000102cf90f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='search-term']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000102cf2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000102c87f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102980fcc chromedriver + 217036
+3   chromedriver                        0x00000001029b0b7c chromedriver + 412540
+4   chromedriver                        0x00000001029d9b2c chromedriver + 580396
+5   chromedriver                        0x00000001029a6010 chromedriver + 368656
+6   chromedriver                        0x0000000102cc839c chromedriver + 3654556
+7   chromedriver                        0x0000000102ccbc4c chromedriver + 3669068
+8   chromedriver                        0x0000000102cd014c chromedriver + 3686732
+9   chromedriver                        0x0000000102ccc654 chromedriver + 3671636
+10  chromedriver                        0x0000000102caab40 chromedriver + 3533632
+11  chromedriver                        0x0000000102ce4414 chromedriver + 3769364
+12  chromedriver                        0x0000000102ce4578 chromedriver + 3769720
+13  chromedriver                        0x0000000102cf90f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='modal__close']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000100872ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000100807f1c chromedriver + 3391260
+2   chromedriver                        0x0000000100500fcc chromedriver + 217036
+3   chromedriver                        0x0000000100530b7c chromedriver + 412540
+4   chromedriver                        0x0000000100559b2c chromedriver + 580396
+5   chromedriver                        0x0000000100526010 chromedriver + 368656
+6   chromedriver                        0x000000010084839c chromedriver + 3654556
+7   chromedriver                        0x000000010084bc4c chromedriver + 3669068
+8   chromedriver                        0x000000010085014c chromedriver + 3686732
+9   chromedriver                        0x000000010084c654 chromedriver + 3671636
+10  chromedriver                        0x000000010082ab40 chromedriver + 3533632
+11  chromedriver                        0x0000000100864414 chromedriver + 3769364
+12  chromedriver                        0x0000000100864578 chromedriver + 3769720
+13  chromedriver                        0x00000001008790f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='search-term']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000100872ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000100807f1c chromedriver + 3391260
+2   chromedriver                        0x0000000100500fcc chromedriver + 217036
+3   chromedriver                        0x0000000100530b7c chromedriver + 412540
+4   chromedriver                        0x0000000100559b2c chromedriver + 580396
+5   chromedriver                        0x0000000100526010 chromedriver + 368656
+6   chromedriver                        0x000000010084839c chromedriver + 3654556
+7   chromedriver                        0x000000010084bc4c chromedriver + 3669068
+8   chromedriver                        0x000000010085014c chromedriver + 3686732
+9   chromedriver                        0x000000010084c654 chromedriver + 3671636
+10  chromedriver                        0x000000010082ab40 chromedriver + 3533632
+11  chromedriver                        0x0000000100864414 chromedriver + 3769364
+12  chromedriver                        0x0000000100864578 chromedriver + 3769720
+13  chromedriver                        0x00000001008790f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: 
+Stacktrace:
+0   chromedriver                        0x0000000104e6eae0 chromedriver + 3828448
+1   chromedriver                        0x0000000104e03f1c chromedriver + 3391260
+2   chromedriver                        0x0000000104afcfcc chromedriver + 217036
+3   chromedriver                        0x0000000104b2cb7c chromedriver + 412540
+4   chromedriver                        0x0000000104b55b2c chromedriver + 580396
+5   chromedriver                        0x0000000104b22010 chromedriver + 368656
+6   chromedriver                        0x0000000104e4439c chromedriver + 3654556
+7   chromedriver                        0x0000000104e47c4c chromedriver + 3669068
+8   chromedriver                        0x0000000104e4c14c chromedriver + 3686732
+9   chromedriver                        0x0000000104e48654 chromedriver + 3671636
+10  chromedriver                        0x0000000104e26b40 chromedriver + 3533632
+11  chromedriver                        0x0000000104e60414 chromedriver + 3769364
+12  chromedriver                        0x0000000104e60578 chromedriver + 3769720
+13  chromedriver                        0x0000000104e750f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (402, 82). Other element would receive the click: <div data-test="cookie-overlay" class="overlay-2KhaK"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000104e6eae0 chromedriver + 3828448
+1   chromedriver                        0x0000000104e03f1c chromedriver + 3391260
+2   chromedriver                        0x0000000104afcfcc chromedriver + 217036
+3   chromedriver                        0x0000000104b32df4 chromedriver + 437748
+4   chromedriver                        0x0000000104b3101c chromedriver + 430108
+5   chromedriver                        0x0000000104b2ee38 chromedriver + 421432
+6   chromedriver                        0x0000000104b2ddc4 chromedriver + 417220
+7   chromedriver                        0x0000000104b2391c chromedriver + 375068
+8   chromedriver                        0x0000000104b23308 chromedriver + 373512
+9   chromedriver                        0x0000000104b55b2c chromedriver + 580396
+10  chromedriver                        0x0000000104b22010 chromedriver + 368656
+11  chromedriver                        0x0000000104e4439c chromedriver + 3654556
+12  chromedriver                        0x0000000104e47c4c chromedriver + 3669068
+13  chromedriver                        0x0000000104e4c14c chromedriver + 3686732
+14  chromedriver                        0x0000000104e48654 chromedriver + 3671636
+15  chromedriver                        0x0000000104e26b40 chromedriver + 3533632
+16  chromedriver                        0x0000000104e60414 chromedriver + 3769364
+17  chromedriver                        0x0000000104e60578 chromedriver + 3769720
+18  chromedriver                        0x0000000104e750f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button data-test="allow-all" __source="[object Object]" type="button" class="c-button-2pep9 c-button--primary-1XklW c-button--inverted-34I2m joyfully-bold-3x5jj joyfully-bold--primary-22rxF joyfully-bold--medium-SgzvT c-button--primary-3tLoH">...</button> is not clickable at point (792, 426). Other element would receive the click: <div id="monetate_lightbox_mask" style="background-color: rgb(0, 0, 0); height: calc(100% + 5000px); left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; width: 100%; opacity: 0.6; display: block; transition: opacity 0.5s ease 0s;"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000103022ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000102fb7f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102cb0fcc chromedriver + 217036
+3   chromedriver                        0x0000000102ce6df4 chromedriver + 437748
+4   chromedriver                        0x0000000102ce501c chromedriver + 430108
+5   chromedriver                        0x0000000102ce2e38 chromedriver + 421432
+6   chromedriver                        0x0000000102ce1dc4 chromedriver + 417220
+7   chromedriver                        0x0000000102cd791c chromedriver + 375068
+8   chromedriver                        0x0000000102cd7308 chromedriver + 373512
+9   chromedriver                        0x0000000102d09b2c chromedriver + 580396
+10  chromedriver                        0x0000000102cd6010 chromedriver + 368656
+11  chromedriver                        0x0000000102ff839c chromedriver + 3654556
+12  chromedriver                        0x0000000102ffbc4c chromedriver + 3669068
+13  chromedriver                        0x000000010300014c chromedriver + 3686732
+14  chromedriver                        0x0000000102ffc654 chromedriver + 3671636
+15  chromedriver                        0x0000000102fdab40 chromedriver + 3533632
+16  chromedriver                        0x0000000103014414 chromedriver + 3769364
+17  chromedriver                        0x0000000103014578 chromedriver + 3769720
+18  chromedriver                        0x00000001030290f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (43, 128). Other element would receive the click: <div id="monetate_lightbox_mask" style="background-color: rgb(0, 0, 0); height: calc(100% + 5000px); left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; width: 100%; opacity: 0.6; display: block; transition: opacity 0.5s ease 0s;"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000103022ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000102fb7f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102cb0fcc chromedriver + 217036
+3   chromedriver                        0x0000000102ce6df4 chromedriver + 437748
+4   chromedriver                        0x0000000102ce501c chromedriver + 430108
+5   chromedriver                        0x0000000102ce2e38 chromedriver + 421432
+6   chromedriver                        0x0000000102ce1dc4 chromedriver + 417220
+7   chromedriver                        0x0000000102cd791c chromedriver + 375068
+8   chromedriver                        0x0000000102cd7308 chromedriver + 373512
+9   chromedriver                        0x0000000102d09b2c chromedriver + 580396
+10  chromedriver                        0x0000000102cd6010 chromedriver + 368656
+11  chromedriver                        0x0000000102ff839c chromedriver + 3654556
+12  chromedriver                        0x0000000102ffbc4c chromedriver + 3669068
+13  chromedriver                        0x000000010300014c chromedriver + 3686732
+14  chromedriver                        0x0000000102ffc654 chromedriver + 3671636
+15  chromedriver                        0x0000000102fdab40 chromedriver + 3533632
+16  chromedriver                        0x0000000103014414 chromedriver + 3769364
+17  chromedriver                        0x0000000103014578 chromedriver + 3769720
+18  chromedriver                        0x00000001030290f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such window: window was already closed
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x00000001032ceae0 chromedriver + 3828448
+1   chromedriver                        0x0000000103263f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102f5cfcc chromedriver + 217036
+3   chromedriver                        0x0000000102f42648 chromedriver + 108104
+4   chromedriver                        0x0000000102f4a768 chromedriver + 141160
+5   chromedriver                        0x0000000102fb5348 chromedriver + 578376
+6   chromedriver                        0x0000000102f82010 chromedriver + 368656
+7   chromedriver                        0x00000001032a439c chromedriver + 3654556
+8   chromedriver                        0x00000001032a7c4c chromedriver + 3669068
+9   chromedriver                        0x00000001032ac14c chromedriver + 3686732
+10  chromedriver                        0x00000001032a8654 chromedriver + 3671636
+11  chromedriver                        0x0000000103286b40 chromedriver + 3533632
+12  chromedriver                        0x00000001032c0414 chromedriver + 3769364
+13  chromedriver                        0x00000001032c0578 chromedriver + 3769720
+14  chromedriver                        0x00000001032d50f0 chromedriver + 3854576
+15  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+16  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such window: window was already closed
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x00000001032ceae0 chromedriver + 3828448
+1   chromedriver                        0x0000000103263f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102f5cfcc chromedriver + 217036
+3   chromedriver                        0x0000000102f42648 chromedriver + 108104
+4   chromedriver                        0x0000000102f4a768 chromedriver + 141160
+5   chromedriver                        0x0000000102fb5348 chromedriver + 578376
+6   chromedriver                        0x0000000102f82010 chromedriver + 368656
+7   chromedriver                        0x00000001032a439c chromedriver + 3654556
+8   chromedriver                        0x00000001032a7c4c chromedriver + 3669068
+9   chromedriver                        0x00000001032ac14c chromedriver + 3686732
+10  chromedriver                        0x00000001032a8654 chromedriver + 3671636
+11  chromedriver                        0x0000000103286b40 chromedriver + 3533632
+12  chromedriver                        0x00000001032c0414 chromedriver + 3769364
+13  chromedriver                        0x00000001032c0578 chromedriver + 3769720
+14  chromedriver                        0x00000001032d50f0 chromedriver + 3854576
+15  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+16  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: 
+Stacktrace:
+0   chromedriver                        0x000000010314eae0 chromedriver + 3828448
+1   chromedriver                        0x00000001030e3f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102ddcfcc chromedriver + 217036
+3   chromedriver                        0x0000000102e0cb7c chromedriver + 412540
+4   chromedriver                        0x0000000102e35b2c chromedriver + 580396
+5   chromedriver                        0x0000000102e02010 chromedriver + 368656
+6   chromedriver                        0x000000010312439c chromedriver + 3654556
+7   chromedriver                        0x0000000103127c4c chromedriver + 3669068
+8   chromedriver                        0x000000010312c14c chromedriver + 3686732
+9   chromedriver                        0x0000000103128654 chromedriver + 3671636
+10  chromedriver                        0x0000000103106b40 chromedriver + 3533632
+11  chromedriver                        0x0000000103140414 chromedriver + 3769364
+12  chromedriver                        0x0000000103140578 chromedriver + 3769720
+13  chromedriver                        0x00000001031550f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (438, 82). Other element would receive the click: <div data-test="cookie-overlay" class="overlay-2KhaK"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010314eae0 chromedriver + 3828448
+1   chromedriver                        0x00000001030e3f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102ddcfcc chromedriver + 217036
+3   chromedriver                        0x0000000102e12df4 chromedriver + 437748
+4   chromedriver                        0x0000000102e1101c chromedriver + 430108
+5   chromedriver                        0x0000000102e0ee38 chromedriver + 421432
+6   chromedriver                        0x0000000102e0ddc4 chromedriver + 417220
+7   chromedriver                        0x0000000102e0391c chromedriver + 375068
+8   chromedriver                        0x0000000102e03308 chromedriver + 373512
+9   chromedriver                        0x0000000102e35b2c chromedriver + 580396
+10  chromedriver                        0x0000000102e02010 chromedriver + 368656
+11  chromedriver                        0x000000010312439c chromedriver + 3654556
+12  chromedriver                        0x0000000103127c4c chromedriver + 3669068
+13  chromedriver                        0x000000010312c14c chromedriver + 3686732
+14  chromedriver                        0x0000000103128654 chromedriver + 3671636
+15  chromedriver                        0x0000000103106b40 chromedriver + 3533632
+16  chromedriver                        0x0000000103140414 chromedriver + 3769364
+17  chromedriver                        0x0000000103140578 chromedriver + 3769720
+18  chromedriver                        0x00000001031550f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: 
+Stacktrace:
+0   chromedriver                        0x0000000104776ae0 chromedriver + 3828448
+1   chromedriver                        0x000000010470bf1c chromedriver + 3391260
+2   chromedriver                        0x0000000104404fcc chromedriver + 217036
+3   chromedriver                        0x0000000104434b7c chromedriver + 412540
+4   chromedriver                        0x000000010445db2c chromedriver + 580396
+5   chromedriver                        0x000000010442a010 chromedriver + 368656
+6   chromedriver                        0x000000010474c39c chromedriver + 3654556
+7   chromedriver                        0x000000010474fc4c chromedriver + 3669068
+8   chromedriver                        0x000000010475414c chromedriver + 3686732
+9   chromedriver                        0x0000000104750654 chromedriver + 3671636
+10  chromedriver                        0x000000010472eb40 chromedriver + 3533632
+11  chromedriver                        0x0000000104768414 chromedriver + 3769364
+12  chromedriver                        0x0000000104768578 chromedriver + 3769720
+13  chromedriver                        0x000000010477d0f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (438, 82). Other element would receive the click: <div data-test="cookie-overlay" class="overlay-2KhaK"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000104776ae0 chromedriver + 3828448
+1   chromedriver                        0x000000010470bf1c chromedriver + 3391260
+2   chromedriver                        0x0000000104404fcc chromedriver + 217036
+3   chromedriver                        0x000000010443adf4 chromedriver + 437748
+4   chromedriver                        0x000000010443901c chromedriver + 430108
+5   chromedriver                        0x0000000104436e38 chromedriver + 421432
+6   chromedriver                        0x0000000104435dc4 chromedriver + 417220
+7   chromedriver                        0x000000010442b91c chromedriver + 375068
+8   chromedriver                        0x000000010442b308 chromedriver + 373512
+9   chromedriver                        0x000000010445db2c chromedriver + 580396
+10  chromedriver                        0x000000010442a010 chromedriver + 368656
+11  chromedriver                        0x000000010474c39c chromedriver + 3654556
+12  chromedriver                        0x000000010474fc4c chromedriver + 3669068
+13  chromedriver                        0x000000010475414c chromedriver + 3686732
+14  chromedriver                        0x0000000104750654 chromedriver + 3671636
+15  chromedriver                        0x000000010472eb40 chromedriver + 3533632
+16  chromedriver                        0x0000000104768414 chromedriver + 3769364
+17  chromedriver                        0x0000000104768578 chromedriver + 3769720
+18  chromedriver                        0x000000010477d0f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button data-test="allow-all" __source="[object Object]" type="button" class="c-button-2pep9 c-button--primary-1XklW c-button--inverted-34I2m joyfully-bold-3x5jj joyfully-bold--primary-22rxF joyfully-bold--medium-SgzvT c-button--primary-3tLoH">...</button> is not clickable at point (792, 426). Other element would receive the click: <div id="monetate_lightbox_mask" style="background-color: rgb(0, 0, 0); height: calc(100% + 5000px); left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; width: 100%; opacity: 0.6; display: block; transition: opacity 0.5s ease 0s;"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x00000001030a2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000103037f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102d30fcc chromedriver + 217036
+3   chromedriver                        0x0000000102d66df4 chromedriver + 437748
+4   chromedriver                        0x0000000102d6501c chromedriver + 430108
+5   chromedriver                        0x0000000102d62e38 chromedriver + 421432
+6   chromedriver                        0x0000000102d61dc4 chromedriver + 417220
+7   chromedriver                        0x0000000102d5791c chromedriver + 375068
+8   chromedriver                        0x0000000102d57308 chromedriver + 373512
+9   chromedriver                        0x0000000102d89b2c chromedriver + 580396
+10  chromedriver                        0x0000000102d56010 chromedriver + 368656
+11  chromedriver                        0x000000010307839c chromedriver + 3654556
+12  chromedriver                        0x000000010307bc4c chromedriver + 3669068
+13  chromedriver                        0x000000010308014c chromedriver + 3686732
+14  chromedriver                        0x000000010307c654 chromedriver + 3671636
+15  chromedriver                        0x000000010305ab40 chromedriver + 3533632
+16  chromedriver                        0x0000000103094414 chromedriver + 3769364
+17  chromedriver                        0x0000000103094578 chromedriver + 3769720
+18  chromedriver                        0x00000001030a90f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (43, 128). Other element would receive the click: <div id="monetate_lightbox_mask" style="background-color: rgb(0, 0, 0); height: calc(100% + 5000px); left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; width: 100%; opacity: 0.6; display: block; transition: opacity 0.5s ease 0s;"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x00000001030a2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000103037f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102d30fcc chromedriver + 217036
+3   chromedriver                        0x0000000102d66df4 chromedriver + 437748
+4   chromedriver                        0x0000000102d6501c chromedriver + 430108
+5   chromedriver                        0x0000000102d62e38 chromedriver + 421432
+6   chromedriver                        0x0000000102d61dc4 chromedriver + 417220
+7   chromedriver                        0x0000000102d5791c chromedriver + 375068
+8   chromedriver                        0x0000000102d57308 chromedriver + 373512
+9   chromedriver                        0x0000000102d89b2c chromedriver + 580396
+10  chromedriver                        0x0000000102d56010 chromedriver + 368656
+11  chromedriver                        0x000000010307839c chromedriver + 3654556
+12  chromedriver                        0x000000010307bc4c chromedriver + 3669068
+13  chromedriver                        0x000000010308014c chromedriver + 3686732
+14  chromedriver                        0x000000010307c654 chromedriver + 3671636
+15  chromedriver                        0x000000010305ab40 chromedriver + 3533632
+16  chromedriver                        0x0000000103094414 chromedriver + 3769364
+17  chromedriver                        0x0000000103094578 chromedriver + 3769720
+18  chromedriver                        0x00000001030a90f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: 
+Stacktrace:
+0   chromedriver                        0x00000001047e2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000104777f1c chromedriver + 3391260
+2   chromedriver                        0x0000000104470fcc chromedriver + 217036
+3   chromedriver                        0x00000001044a0b7c chromedriver + 412540
+4   chromedriver                        0x00000001044c9b2c chromedriver + 580396
+5   chromedriver                        0x0000000104496010 chromedriver + 368656
+6   chromedriver                        0x00000001047b839c chromedriver + 3654556
+7   chromedriver                        0x00000001047bbc4c chromedriver + 3669068
+8   chromedriver                        0x00000001047c014c chromedriver + 3686732
+9   chromedriver                        0x00000001047bc654 chromedriver + 3671636
+10  chromedriver                        0x000000010479ab40 chromedriver + 3533632
+11  chromedriver                        0x00000001047d4414 chromedriver + 3769364
+12  chromedriver                        0x00000001047d4578 chromedriver + 3769720
+13  chromedriver                        0x00000001047e90f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (414, 82). Other element would receive the click: <div data-test="cookie-overlay" class="overlay-2KhaK"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x00000001047e2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000104777f1c chromedriver + 3391260
+2   chromedriver                        0x0000000104470fcc chromedriver + 217036
+3   chromedriver                        0x00000001044a6df4 chromedriver + 437748
+4   chromedriver                        0x00000001044a501c chromedriver + 430108
+5   chromedriver                        0x00000001044a2e38 chromedriver + 421432
+6   chromedriver                        0x00000001044a1dc4 chromedriver + 417220
+7   chromedriver                        0x000000010449791c chromedriver + 375068
+8   chromedriver                        0x0000000104497308 chromedriver + 373512
+9   chromedriver                        0x00000001044c9b2c chromedriver + 580396
+10  chromedriver                        0x0000000104496010 chromedriver + 368656
+11  chromedriver                        0x00000001047b839c chromedriver + 3654556
+12  chromedriver                        0x00000001047bbc4c chromedriver + 3669068
+13  chromedriver                        0x00000001047c014c chromedriver + 3686732
+14  chromedriver                        0x00000001047bc654 chromedriver + 3671636
+15  chromedriver                        0x000000010479ab40 chromedriver + 3533632
+16  chromedriver                        0x00000001047d4414 chromedriver + 3769364
+17  chromedriver                        0x00000001047d4578 chromedriver + 3769720
+18  chromedriver                        0x00000001047e90f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button data-test="allow-all" __source="[object Object]" type="button" class="c-button-2pep9 c-button--primary-1XklW c-button--inverted-34I2m joyfully-bold-3x5jj joyfully-bold--primary-22rxF joyfully-bold--medium-SgzvT c-button--primary-3tLoH">...</button> is not clickable at point (796, 426). Other element would receive the click: <div id="monetate_lightbox_mask" style="background-color: rgb(0, 0, 0); height: calc(100% + 5000px); left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; width: 100%; opacity: 0.6; display: block; transition: opacity 0.5s ease 0s;"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x00000001029e2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000102977f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102670fcc chromedriver + 217036
+3   chromedriver                        0x00000001026a6df4 chromedriver + 437748
+4   chromedriver                        0x00000001026a501c chromedriver + 430108
+5   chromedriver                        0x00000001026a2e38 chromedriver + 421432
+6   chromedriver                        0x00000001026a1dc4 chromedriver + 417220
+7   chromedriver                        0x000000010269791c chromedriver + 375068
+8   chromedriver                        0x0000000102697308 chromedriver + 373512
+9   chromedriver                        0x00000001026c9b2c chromedriver + 580396
+10  chromedriver                        0x0000000102696010 chromedriver + 368656
+11  chromedriver                        0x00000001029b839c chromedriver + 3654556
+12  chromedriver                        0x00000001029bbc4c chromedriver + 3669068
+13  chromedriver                        0x00000001029c014c chromedriver + 3686732
+14  chromedriver                        0x00000001029bc654 chromedriver + 3671636
+15  chromedriver                        0x000000010299ab40 chromedriver + 3533632
+16  chromedriver                        0x00000001029d4414 chromedriver + 3769364
+17  chromedriver                        0x00000001029d4578 chromedriver + 3769720
+18  chromedriver                        0x00000001029e90f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (43, 128). Other element would receive the click: <div id="monetate_lightbox_mask" style="background-color: rgb(0, 0, 0); height: calc(100% + 5000px); left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; width: 100%; opacity: 0.6; display: block; transition: opacity 0.5s ease 0s;"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x00000001029e2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000102977f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102670fcc chromedriver + 217036
+3   chromedriver                        0x00000001026a6df4 chromedriver + 437748
+4   chromedriver                        0x00000001026a501c chromedriver + 430108
+5   chromedriver                        0x00000001026a2e38 chromedriver + 421432
+6   chromedriver                        0x00000001026a1dc4 chromedriver + 417220
+7   chromedriver                        0x000000010269791c chromedriver + 375068
+8   chromedriver                        0x0000000102697308 chromedriver + 373512
+9   chromedriver                        0x00000001026c9b2c chromedriver + 580396
+10  chromedriver                        0x0000000102696010 chromedriver + 368656
+11  chromedriver                        0x00000001029b839c chromedriver + 3654556
+12  chromedriver                        0x00000001029bbc4c chromedriver + 3669068
+13  chromedriver                        0x00000001029c014c chromedriver + 3686732
+14  chromedriver                        0x00000001029bc654 chromedriver + 3671636
+15  chromedriver                        0x000000010299ab40 chromedriver + 3533632
+16  chromedriver                        0x00000001029d4414 chromedriver + 3769364
+17  chromedriver                        0x00000001029d4578 chromedriver + 3769720
+18  chromedriver                        0x00000001029e90f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+until() missing 1 required positional argument: 'method'Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (414, 82). Other element would receive the click: <div id="monetate_lightbox_mask" style="background-color: rgb(0, 0, 0); height: calc(100% + 5000px); left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; width: 100%; opacity: 0.6; display: block; transition: opacity 0.5s ease 0s;"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010117aae0 chromedriver + 3828448
+1   chromedriver                        0x000000010110ff1c chromedriver + 3391260
+2   chromedriver                        0x0000000100e08fcc chromedriver + 217036
+3   chromedriver                        0x0000000100e3edf4 chromedriver + 437748
+4   chromedriver                        0x0000000100e3d01c chromedriver + 430108
+5   chromedriver                        0x0000000100e3ae38 chromedriver + 421432
+6   chromedriver                        0x0000000100e39dc4 chromedriver + 417220
+7   chromedriver                        0x0000000100e2f91c chromedriver + 375068
+8   chromedriver                        0x0000000100e2f308 chromedriver + 373512
+9   chromedriver                        0x0000000100e61b2c chromedriver + 580396
+10  chromedriver                        0x0000000100e2e010 chromedriver + 368656
+11  chromedriver                        0x000000010115039c chromedriver + 3654556
+12  chromedriver                        0x0000000101153c4c chromedriver + 3669068
+13  chromedriver                        0x000000010115814c chromedriver + 3686732
+14  chromedriver                        0x0000000101154654 chromedriver + 3671636
+15  chromedriver                        0x0000000101132b40 chromedriver + 3533632
+16  chromedriver                        0x000000010116c414 chromedriver + 3769364
+17  chromedriver                        0x000000010116c578 chromedriver + 3769720
+18  chromedriver                        0x00000001011810f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+until() missing 1 required positional argument: 'method'Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (414, 82). Other element would receive the click: <div data-test="cookie-overlay" class="overlay-2KhaK"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010050eae0 chromedriver + 3828448
+1   chromedriver                        0x00000001004a3f1c chromedriver + 3391260
+2   chromedriver                        0x000000010019cfcc chromedriver + 217036
+3   chromedriver                        0x00000001001d2df4 chromedriver + 437748
+4   chromedriver                        0x00000001001d101c chromedriver + 430108
+5   chromedriver                        0x00000001001cee38 chromedriver + 421432
+6   chromedriver                        0x00000001001cddc4 chromedriver + 417220
+7   chromedriver                        0x00000001001c391c chromedriver + 375068
+8   chromedriver                        0x00000001001c3308 chromedriver + 373512
+9   chromedriver                        0x00000001001f5b2c chromedriver + 580396
+10  chromedriver                        0x00000001001c2010 chromedriver + 368656
+11  chromedriver                        0x00000001004e439c chromedriver + 3654556
+12  chromedriver                        0x00000001004e7c4c chromedriver + 3669068
+13  chromedriver                        0x00000001004ec14c chromedriver + 3686732
+14  chromedriver                        0x00000001004e8654 chromedriver + 3671636
+15  chromedriver                        0x00000001004c6b40 chromedriver + 3533632
+16  chromedriver                        0x0000000100500414 chromedriver + 3769364
+17  chromedriver                        0x0000000100500578 chromedriver + 3769720
+18  chromedriver                        0x00000001005150f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+until() missing 1 required positional argument: 'method'Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (43, 128). Other element would receive the click: <div id="monetate_lightbox_mask" style="background-color: rgb(0, 0, 0); height: calc(100% + 5000px); left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; width: 100%; opacity: 0.6; display: block; transition: opacity 0.5s ease 0s;"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000100812ae0 chromedriver + 3828448
+1   chromedriver                        0x00000001007a7f1c chromedriver + 3391260
+2   chromedriver                        0x00000001004a0fcc chromedriver + 217036
+3   chromedriver                        0x00000001004d6df4 chromedriver + 437748
+4   chromedriver                        0x00000001004d501c chromedriver + 430108
+5   chromedriver                        0x00000001004d2e38 chromedriver + 421432
+6   chromedriver                        0x00000001004d1dc4 chromedriver + 417220
+7   chromedriver                        0x00000001004c791c chromedriver + 375068
+8   chromedriver                        0x00000001004c7308 chromedriver + 373512
+9   chromedriver                        0x00000001004f9b2c chromedriver + 580396
+10  chromedriver                        0x00000001004c6010 chromedriver + 368656
+11  chromedriver                        0x00000001007e839c chromedriver + 3654556
+12  chromedriver                        0x00000001007ebc4c chromedriver + 3669068
+13  chromedriver                        0x00000001007f014c chromedriver + 3686732
+14  chromedriver                        0x00000001007ec654 chromedriver + 3671636
+15  chromedriver                        0x00000001007cab40 chromedriver + 3533632
+16  chromedriver                        0x0000000100804414 chromedriver + 3769364
+17  chromedriver                        0x0000000100804578 chromedriver + 3769720
+18  chromedriver                        0x00000001008190f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+until() missing 1 required positional argument: 'method'Message: element click intercepted: Element <button type="submit" class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0">...</button> is not clickable at point (414, 82). Other element would receive the click: <div id="monetate_lightbox_mask" style="background-color: rgb(0, 0, 0); height: calc(100% + 5000px); left: 0px; margin: 0px; padding: 0px; position: fixed; top: 0px; width: 100%; opacity: 0.6; display: block; transition: opacity 0.5s ease 0s;"></div>
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010136eae0 chromedriver + 3828448
+1   chromedriver                        0x0000000101303f1c chromedriver + 3391260
+2   chromedriver                        0x0000000100ffcfcc chromedriver + 217036
+3   chromedriver                        0x0000000101032df4 chromedriver + 437748
+4   chromedriver                        0x000000010103101c chromedriver + 430108
+5   chromedriver                        0x000000010102ee38 chromedriver + 421432
+6   chromedriver                        0x000000010102ddc4 chromedriver + 417220
+7   chromedriver                        0x000000010102391c chromedriver + 375068
+8   chromedriver                        0x0000000101023308 chromedriver + 373512
+9   chromedriver                        0x0000000101055b2c chromedriver + 580396
+10  chromedriver                        0x0000000101022010 chromedriver + 368656
+11  chromedriver                        0x000000010134439c chromedriver + 3654556
+12  chromedriver                        0x0000000101347c4c chromedriver + 3669068
+13  chromedriver                        0x000000010134c14c chromedriver + 3686732
+14  chromedriver                        0x0000000101348654 chromedriver + 3671636
+15  chromedriver                        0x0000000101326b40 chromedriver + 3533632
+16  chromedriver                        0x0000000101360414 chromedriver + 3769364
+17  chromedriver                        0x0000000101360578 chromedriver + 3769720
+18  chromedriver                        0x00000001013750f0 chromedriver + 3854576
+19  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+20  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-test='allow-all']"}
+  (Session info: chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000100f3aae0 chromedriver + 3828448
+1   chromedriver                        0x0000000100ecff1c chromedriver + 3391260
+2   chromedriver                        0x0000000100bc8fcc chromedriver + 217036
+3   chromedriver                        0x0000000100bf8b7c chromedriver + 412540
+4   chromedriver                        0x0000000100c21b2c chromedriver + 580396
+5   chromedriver                        0x0000000100bee010 chromedriver + 368656
+6   chromedriver                        0x0000000100f1039c chromedriver + 3654556
+7   chromedriver                        0x0000000100f13c4c chromedriver + 3669068
+8   chromedriver                        0x0000000100f1814c chromedriver + 3686732
+9   chromedriver                        0x0000000100f14654 chromedriver + 3671636
+10  chromedriver                        0x0000000100ef2b40 chromedriver + 3533632
+11  chromedriver                        0x0000000100f2c414 chromedriver + 3769364
+12  chromedriver                        0x0000000100f2c578 chromedriver + 3769720
+13  chromedriver                        0x0000000100f410f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-test='allow-all']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000103312ae0 chromedriver + 3828448
+1   chromedriver                        0x00000001032a7f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102fa0fcc chromedriver + 217036
+3   chromedriver                        0x0000000102fd0b7c chromedriver + 412540
+4   chromedriver                        0x0000000102ff9b2c chromedriver + 580396
+5   chromedriver                        0x0000000102fc6010 chromedriver + 368656
+6   chromedriver                        0x00000001032e839c chromedriver + 3654556
+7   chromedriver                        0x00000001032ebc4c chromedriver + 3669068
+8   chromedriver                        0x00000001032f014c chromedriver + 3686732
+9   chromedriver                        0x00000001032ec654 chromedriver + 3671636
+10  chromedriver                        0x00000001032cab40 chromedriver + 3533632
+11  chromedriver                        0x0000000103304414 chromedriver + 3769364
+12  chromedriver                        0x0000000103304578 chromedriver + 3769720
+13  chromedriver                        0x00000001033190f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='search-term']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000103312ae0 chromedriver + 3828448
+1   chromedriver                        0x00000001032a7f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102fa0fcc chromedriver + 217036
+3   chromedriver                        0x0000000102fd0b7c chromedriver + 412540
+4   chromedriver                        0x0000000102ff9b2c chromedriver + 580396
+5   chromedriver                        0x0000000102fc6010 chromedriver + 368656
+6   chromedriver                        0x00000001032e839c chromedriver + 3654556
+7   chromedriver                        0x00000001032ebc4c chromedriver + 3669068
+8   chromedriver                        0x00000001032f014c chromedriver + 3686732
+9   chromedriver                        0x00000001032ec654 chromedriver + 3671636
+10  chromedriver                        0x00000001032cab40 chromedriver + 3533632
+11  chromedriver                        0x0000000103304414 chromedriver + 3769364
+12  chromedriver                        0x0000000103304578 chromedriver + 3769720
+13  chromedriver                        0x00000001033190f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-test='allow-all']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010126eae0 chromedriver + 3828448
+1   chromedriver                        0x0000000101203f1c chromedriver + 3391260
+2   chromedriver                        0x0000000100efcfcc chromedriver + 217036
+3   chromedriver                        0x0000000100f2cb7c chromedriver + 412540
+4   chromedriver                        0x0000000100f55b2c chromedriver + 580396
+5   chromedriver                        0x0000000100f22010 chromedriver + 368656
+6   chromedriver                        0x000000010124439c chromedriver + 3654556
+7   chromedriver                        0x0000000101247c4c chromedriver + 3669068
+8   chromedriver                        0x000000010124c14c chromedriver + 3686732
+9   chromedriver                        0x0000000101248654 chromedriver + 3671636
+10  chromedriver                        0x0000000101226b40 chromedriver + 3533632
+11  chromedriver                        0x0000000101260414 chromedriver + 3769364
+12  chromedriver                        0x0000000101260578 chromedriver + 3769720
+13  chromedriver                        0x00000001012750f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='search-term']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010126eae0 chromedriver + 3828448
+1   chromedriver                        0x0000000101203f1c chromedriver + 3391260
+2   chromedriver                        0x0000000100efcfcc chromedriver + 217036
+3   chromedriver                        0x0000000100f2cb7c chromedriver + 412540
+4   chromedriver                        0x0000000100f55b2c chromedriver + 580396
+5   chromedriver                        0x0000000100f22010 chromedriver + 368656
+6   chromedriver                        0x000000010124439c chromedriver + 3654556
+7   chromedriver                        0x0000000101247c4c chromedriver + 3669068
+8   chromedriver                        0x000000010124c14c chromedriver + 3686732
+9   chromedriver                        0x0000000101248654 chromedriver + 3671636
+10  chromedriver                        0x0000000101226b40 chromedriver + 3533632
+11  chromedriver                        0x0000000101260414 chromedriver + 3769364
+12  chromedriver                        0x0000000101260578 chromedriver + 3769720
+13  chromedriver                        0x00000001012750f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-test='allow-all']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010289aae0 chromedriver + 3828448
+1   chromedriver                        0x000000010282ff1c chromedriver + 3391260
+2   chromedriver                        0x0000000102528fcc chromedriver + 217036
+3   chromedriver                        0x0000000102558b7c chromedriver + 412540
+4   chromedriver                        0x0000000102581b2c chromedriver + 580396
+5   chromedriver                        0x000000010254e010 chromedriver + 368656
+6   chromedriver                        0x000000010287039c chromedriver + 3654556
+7   chromedriver                        0x0000000102873c4c chromedriver + 3669068
+8   chromedriver                        0x000000010287814c chromedriver + 3686732
+9   chromedriver                        0x0000000102874654 chromedriver + 3671636
+10  chromedriver                        0x0000000102852b40 chromedriver + 3533632
+11  chromedriver                        0x000000010288c414 chromedriver + 3769364
+12  chromedriver                        0x000000010288c578 chromedriver + 3769720
+13  chromedriver                        0x00000001028a10f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='search-term']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x000000010289aae0 chromedriver + 3828448
+1   chromedriver                        0x000000010282ff1c chromedriver + 3391260
+2   chromedriver                        0x0000000102528fcc chromedriver + 217036
+3   chromedriver                        0x0000000102558b7c chromedriver + 412540
+4   chromedriver                        0x0000000102581b2c chromedriver + 580396
+5   chromedriver                        0x000000010254e010 chromedriver + 368656
+6   chromedriver                        0x000000010287039c chromedriver + 3654556
+7   chromedriver                        0x0000000102873c4c chromedriver + 3669068
+8   chromedriver                        0x000000010287814c chromedriver + 3686732
+9   chromedriver                        0x0000000102874654 chromedriver + 3671636
+10  chromedriver                        0x0000000102852b40 chromedriver + 3533632
+11  chromedriver                        0x000000010288c414 chromedriver + 3769364
+12  chromedriver                        0x000000010288c578 chromedriver + 3769720
+13  chromedriver                        0x00000001028a10f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-test='allow-all']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x00000001023daae0 chromedriver + 3828448
+1   chromedriver                        0x000000010236ff1c chromedriver + 3391260
+2   chromedriver                        0x0000000102068fcc chromedriver + 217036
+3   chromedriver                        0x0000000102098b7c chromedriver + 412540
+4   chromedriver                        0x00000001020c1b2c chromedriver + 580396
+5   chromedriver                        0x000000010208e010 chromedriver + 368656
+6   chromedriver                        0x00000001023b039c chromedriver + 3654556
+7   chromedriver                        0x00000001023b3c4c chromedriver + 3669068
+8   chromedriver                        0x00000001023b814c chromedriver + 3686732
+9   chromedriver                        0x00000001023b4654 chromedriver + 3671636
+10  chromedriver                        0x0000000102392b40 chromedriver + 3533632
+11  chromedriver                        0x00000001023cc414 chromedriver + 3769364
+12  chromedriver                        0x00000001023cc578 chromedriver + 3769720
+13  chromedriver                        0x00000001023e10f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='search-term']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x00000001023daae0 chromedriver + 3828448
+1   chromedriver                        0x000000010236ff1c chromedriver + 3391260
+2   chromedriver                        0x0000000102068fcc chromedriver + 217036
+3   chromedriver                        0x0000000102098b7c chromedriver + 412540
+4   chromedriver                        0x00000001020c1b2c chromedriver + 580396
+5   chromedriver                        0x000000010208e010 chromedriver + 368656
+6   chromedriver                        0x00000001023b039c chromedriver + 3654556
+7   chromedriver                        0x00000001023b3c4c chromedriver + 3669068
+8   chromedriver                        0x00000001023b814c chromedriver + 3686732
+9   chromedriver                        0x00000001023b4654 chromedriver + 3671636
+10  chromedriver                        0x0000000102392b40 chromedriver + 3533632
+11  chromedriver                        0x00000001023cc414 chromedriver + 3769364
+12  chromedriver                        0x00000001023cc578 chromedriver + 3769720
+13  chromedriver                        0x00000001023e10f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@data-test='allow-all']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000102eb2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000102e47f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102b40fcc chromedriver + 217036
+3   chromedriver                        0x0000000102b70b7c chromedriver + 412540
+4   chromedriver                        0x0000000102b99b2c chromedriver + 580396
+5   chromedriver                        0x0000000102b66010 chromedriver + 368656
+6   chromedriver                        0x0000000102e8839c chromedriver + 3654556
+7   chromedriver                        0x0000000102e8bc4c chromedriver + 3669068
+8   chromedriver                        0x0000000102e9014c chromedriver + 3686732
+9   chromedriver                        0x0000000102e8c654 chromedriver + 3671636
+10  chromedriver                        0x0000000102e6ab40 chromedriver + 3533632
+11  chromedriver                        0x0000000102ea4414 chromedriver + 3769364
+12  chromedriver                        0x0000000102ea4578 chromedriver + 3769720
+13  chromedriver                        0x0000000102eb90f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='search-term']"}
+  (Session info: headless chrome=104.0.5112.101)
+Stacktrace:
+0   chromedriver                        0x0000000102eb2ae0 chromedriver + 3828448
+1   chromedriver                        0x0000000102e47f1c chromedriver + 3391260
+2   chromedriver                        0x0000000102b40fcc chromedriver + 217036
+3   chromedriver                        0x0000000102b70b7c chromedriver + 412540
+4   chromedriver                        0x0000000102b99b2c chromedriver + 580396
+5   chromedriver                        0x0000000102b66010 chromedriver + 368656
+6   chromedriver                        0x0000000102e8839c chromedriver + 3654556
+7   chromedriver                        0x0000000102e8bc4c chromedriver + 3669068
+8   chromedriver                        0x0000000102e9014c chromedriver + 3686732
+9   chromedriver                        0x0000000102e8c654 chromedriver + 3671636
+10  chromedriver                        0x0000000102e6ab40 chromedriver + 3533632
+11  chromedriver                        0x0000000102ea4414 chromedriver + 3769364
+12  chromedriver                        0x0000000102ea4578 chromedriver + 3769720
+13  chromedriver                        0x0000000102eb90f0 chromedriver + 3854576
+14  libsystem_pthread.dylib             0x00000001b7e25240 _pthread_start + 148
+15  libsystem_pthread.dylib             0x00000001b7e20024 thread_start + 8
+Message: Unable to locate element: //*[@class='modal__close']
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+Message: Element <button class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0" type="submit"> is not clickable at point (369,83) because another element <div class="overlay-2KhaK"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:291:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:92:31
+Message: Unable to locate element: //*[@class='modal__close']
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+Message: Element <button class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0" type="submit"> is not clickable at point (381,83) because another element <div class="overlay-2KhaK"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:291:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:92:31
+Message: Unable to locate element: //*[@class='modal__close']
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+Message: Element <button class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0" type="submit"> is not clickable at point (369,83) because another element <div class="overlay-2KhaK"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:291:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:92:31
+Message: Unable to locate element: //*[@class='modal__close']
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+Message: Element <button class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0" type="submit"> is not clickable at point (367,83) because another element <div class="overlay-2KhaK"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:291:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:92:31
+Message: Unable to locate element: //*[@class='modal__close']
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.jsm:404:5
+element.find/</<@chrome://remote/content/marionette/element.js:291:16
+Message: Element <button class="button.module-c-button--fe2f1 button.module-joyfully-bold--9edf0" type="submit"> is not clickable at point (358,83) because another element <div class="overlay-2KhaK"> obscures it
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.jsm:12:1
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:192:5
+ElementClickInterceptedError@chrome://remote/content/shared/webdriver/Errors.jsm:291:5
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:166:11
+interaction.clickElement@chrome://remote/content/marionette/interaction.js:125:11
+clickElement@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:204:29
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteCommandsChild.jsm:92:31
