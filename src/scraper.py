@@ -34,7 +34,7 @@ class Scraper():
 
     """
     def __init__(self): 
-        print("Start scraping the website..")
+        print("Start scraping the website.....")
         driver_path ="/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/geckodriver"
         #('/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/geckodriver')
         self.driver_path = driver_path
