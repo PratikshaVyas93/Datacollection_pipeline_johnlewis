@@ -273,3 +273,10 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 JavaScript warning: https://www.johnlewis.com/7eFnvpRHnVmHBK66DMGT/VEDaX0bmEpiw/WSo8YwE/NH/xbYFFMNEE, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.johnlewis.com."
 JavaScript warning: https://www.johnlewis.com/7eFnvpRHnVmHBK66DMGT/VEDaX0bmEpiw/WSo8YwE/NH/xbYFFMNEE, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661959010077	Marionette	INFO	Stopped listening on port 55561
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

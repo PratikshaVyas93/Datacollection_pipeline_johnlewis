@@ -10,9 +10,6 @@ Purpose : John's lewis products data collection pipeline
 Importing Libraries
 """
 ################################################################################################################
-from re import S
-from requests import options
-from selenium import webdriver
 from selenium.webdriver import Firefox
 from selenium.webdriver.firefox.options import Options
 from aws_boto import AWSBoto
@@ -23,14 +20,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.service import Service
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-# from webdriver_manager.firefox import ChromeDriverManager
 import uuid
 import json
 import os
 import urllib.request
 import pandas as pd
-import psutil
+
 class Scraper():
     """
             This class initialises the webscraper, that collect the data and save it locally. 
