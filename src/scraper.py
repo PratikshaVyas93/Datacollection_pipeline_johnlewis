@@ -13,6 +13,7 @@ Importing Libraries
 from selenium.webdriver import Firefox
 from selenium.webdriver.firefox.options import Options
 from aws_boto import AWSBoto
+import boto3
 from time import sleep
 from logger import Logger
 from selenium.webdriver.common.by import By
@@ -41,10 +42,19 @@ class Scraper():
         self.search_name = "mobile"
         self.folder_name = "raw_data"
         self.image_folder_name = "images"
+        self.key_id = input('Enter your AWS key id: ')
+        self.secret_key = input('Enter your AWS secret key: ')
+        self.region = input('Enter your region: ')
+        self.client = boto3.client(
+            's3',
+            aws_access_key_id=self.key_id,
+            aws_secret_access_key=self.secret_key,
+            region_name=self.region
+        )
         #self.driver = Service("/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/geckodriver")
         #self.user_agent= "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15"
         firefox_option = Options()
-        #firefox_option.add_argument("--headless") 
+        firefox_option.add_argument("--headless") 
         self.driver = Firefox(options=firefox_option)
         #self.driver = Firefox()
         self._create_metadata_folders(self.folder_name)
@@ -253,7 +263,7 @@ class Scraper():
         try:
             urllib.request.urlretrieve(product_image_link, image_path)
             print("msg : Image Downloaded")
-            s3_url = self.aws.upload_object_s3(image_path, product_id)
+            s3_url = self.aws.upload_object_s3(image_path, product_id,self.client)
             return s3_url
 
         except Exception as e:
