@@ -38,7 +38,7 @@ class AWSBoto:
 
         """
   
-        s3_client = boto3.client('s3',aws_access_key_id="AKIA2OHNBIMCSRVQPS4A",aws_secret_access_key="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")
+        s3_client = boto3.client('s3',aws_access_key_id="",aws_secret_access_key="")
         try:
             print("S3_BUCKET_NAME", S3_BUCKET_NAME)
             print("object_name", object_name)
