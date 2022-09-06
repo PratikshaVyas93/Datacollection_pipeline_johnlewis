@@ -6,17 +6,16 @@ import pandas as pd
 import sqlalchemy
 import os
 
-S3_BUCKET_NAME = 'my-bucket-johnlewis'
-HOST = 'johnlewis-db.c1rptlndtetd.us-east-1.rds.amazonaws.com'
+S3_BUCKET_NAME = "my-bucket-johnlewis"
+HOST = "johnlewis-db.c1rptlndtetd.us-east-1.rds.amazonaws.com"
 DBAPI = 'psycopg2'
-USER = 'postgres'
-PASSWORD = 'Pratiksha'
+USER = "postgres"
+PASSWORD = "Pratiksha"
 PORT = 5432
 DATABASE = 'postgres'
 DATABASE_TYPE = 'postgresql'
-#ACCESS_KEY = os.environ["ACCESS_KEY"]
-#SECRET_KEY = os.environ["SECRET_KEY"]
-
+ACCESS_KEY= os.environ.get('ACCESS_KEY')
+SECRET_KEY =os.environ.get('SECRET_KEY')
 
 class AWSBoto:
 
@@ -38,7 +37,7 @@ class AWSBoto:
 
         """
   
-        s3_client = boto3.client('s3',aws_access_key_id="",aws_secret_access_key="")
+        s3_client = boto3.client('s3',aws_access_key_id=ACCESS_KEY,aws_secret_access_key=SECRET_KEY)
         try:
             print("S3_BUCKET_NAME", S3_BUCKET_NAME)
             print("object_name", object_name)

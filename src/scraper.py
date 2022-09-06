@@ -44,7 +44,7 @@ class Scraper():
         #self.driver = Service("/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/geckodriver")
         #self.user_agent= "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15"
         firefox_option = Options()
-        firefox_option.add_argument("--headless") 
+        #firefox_option.add_argument("--headless") 
         self.driver = Firefox(options=firefox_option)
         #self.driver = Firefox()
         self._create_metadata_folders(self.folder_name)
