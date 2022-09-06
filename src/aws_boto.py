@@ -4,6 +4,7 @@ import boto3
 from sqlalchemy import create_engine
 import pandas as pd
 import sqlalchemy
+import os
 
 S3_BUCKET_NAME = 'my-bucket-johnlewis'
 HOST = 'johnlewis-db.c1rptlndtetd.us-east-1.rds.amazonaws.com'
@@ -13,6 +14,9 @@ PASSWORD = 'Pratiksha'
 PORT = 5432
 DATABASE = 'postgres'
 DATABASE_TYPE = 'postgresql'
+#ACCESS_KEY = os.environ["ACCESS_KEY"]
+#SECRET_KEY = os.environ["SECRET_KEY"]
+
 
 class AWSBoto:
 
@@ -33,10 +37,14 @@ class AWSBoto:
             return url as string
 
         """
-        s3_client = boto3.client('s3')
+  
+        s3_client = boto3.client('s3',aws_access_key_id="AKIA2OHNBIMCSRVQPS4A",aws_secret_access_key="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")
         try:
+            print("S3_BUCKET_NAME", S3_BUCKET_NAME)
+            print("object_name", object_name)
             s3_client.get_object(Bucket=S3_BUCKET_NAME, Key=object_name)
         except:
+            print("upload file on s3")
             s3_client.upload_file(file_name, S3_BUCKET_NAME, object_name)
         
         file_url_to_upload = f's3://{S3_BUCKET_NAME}/{object_name}'
