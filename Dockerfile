@@ -22,6 +22,13 @@ RUN latest_release=$(curl -sS https://api.github.com/repos/mozilla/geckodriver/r
     # Move gecko driver in the system path
     && mv geckodriver /usr/local/bin
 
+ENV USER=postgres
+ENV PASSWORD=Pratiksha
+ENV HOST=johnlewis-db.c1rptlndtetd.us-east-1.rds.amazonaws.com
+ENV S3_BUCKET_NAME=my-bucket-johnlewis
+ENV ACCESS_KEY=AKIA2OHNBIMCSRVQPS4A
+ENV SECRET_KEY=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
+
 
 COPY . . 
 

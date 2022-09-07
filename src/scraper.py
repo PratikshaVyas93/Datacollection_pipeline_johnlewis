@@ -117,7 +117,9 @@ class Scraper():
         try:
             search_name = self.__get_each_element("//input[@name='search-term']")
             search_name.send_keys(self.search_name)  
-            WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))).click()
+            element = WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH,"//button[@type='submit']")))
+            self.driver.execute_script("arguments[0].click();", element)
+            #WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))).click()
             sleep(3)
             self.get_product()      
         except AttributeError:
