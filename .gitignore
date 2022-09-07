@@ -4,3 +4,4 @@
 raw_data
 .vscode
 .env
+/src/log_error.txt

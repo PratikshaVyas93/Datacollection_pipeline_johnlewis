@@ -42,20 +42,22 @@ class Scraper():
         self.search_name = "mobile"
         self.folder_name = "raw_data"
         self.image_folder_name = "images"
-        self.key_id = input('Enter your AWS key id: ')
-        self.secret_key = input('Enter your AWS secret key: ')
-        self.region = input('Enter your region: ')
-        self.client = boto3.client(
-            's3',
-            aws_access_key_id=self.key_id,
-            aws_secret_access_key=self.secret_key,
-            region_name=self.region
-        )
+        # self.key_id = input('Enter your AWS key id: ')
+        # self.secret_key = input('Enter your AWS secret key: ')
+        # self.region = input('Enter your region: ')
+        # self.client = boto3.client(
+        #    's3',
+        #    aws_access_key_id=self.key_id,
+        #    aws_secret_access_key=self.secret_key,
+        #    region_name=self.region
+        # )
         #self.driver = Service("/Users/pratiksha/Documents/scratch/Datacollection_pipeline_johnlewis/src/geckodriver")
-        #self.user_agent= "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15"
+        self.user_agent= "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.3 Safari/605.1.15"
         firefox_option = Options()
         firefox_option.add_argument("--headless") 
+        firefox_option.add_argument(f"--user-agent={self.user_agent}")  
         self.driver = Firefox(options=firefox_option)
+        self.driver.maximize_window()
         #self.driver = Firefox()
         self._create_metadata_folders(self.folder_name)
         self.create_folders(self.image_folder_name)
@@ -157,8 +159,14 @@ class Scraper():
         mobile_categories_container =[]
         product_list= []
         try:
+            #self.driver.save_screenshot("/src/raw_data/images/error.png")
+            #self.driver.get_screenshot_as_file("/src/error.jpg")
+            #self.driver.get_screenshot_as_png("/src/error_sc.jpg")
+            print("Here in get_product_information fun")
             mobile_categories_container = self.__get_elements_list("//div[@class='ProductGrid_product-grid__product__oD7Jq']") 
+            print("mobile_categories_container", mobile_categories_container)
             if len(mobile_categories_container) != 0:
+                print("in if og mobile container")
                 for mobile in mobile_categories_container:
                     u_id = uuid.uuid4()
                     u_unique_id = str(u_id)
@@ -263,7 +271,7 @@ class Scraper():
         try:
             urllib.request.urlretrieve(product_image_link, image_path)
             print("msg : Image Downloaded")
-            s3_url = self.aws.upload_object_s3(image_path, product_id,self.client)
+            s3_url = self.aws.upload_object_s3(image_path,product_id)
             return s3_url
 
         except Exception as e:

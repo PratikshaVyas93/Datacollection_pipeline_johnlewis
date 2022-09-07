@@ -6,11 +6,11 @@ import pandas as pd
 import sqlalchemy
 import os
 
-S3_BUCKET_NAME = "my-bucket-johnlewis"
-HOST = "johnlewis-db.c1rptlndtetd.us-east-1.rds.amazonaws.com"
+S3_BUCKET_NAME = os.environ.get('S3_BUCKET_NAME')
+HOST = os.environ.get('HOST')
 DBAPI = 'psycopg2'
-USER = "postgres"
-PASSWORD = "Pratiksha"
+USER = os.environ.get('USER')
+PASSWORD = os.environ.get('PASSWORD')
 PORT = 5432
 DATABASE = 'postgres'
 DATABASE_TYPE = 'postgresql'
@@ -19,7 +19,7 @@ SECRET_KEY =os.environ.get('SECRET_KEY')
 
 class AWSBoto:
 
-    def upload_object_s3(self,file_name,object_name,s3_client)-> str:
+    def upload_object_s3(self,file_name,object_name)-> str:
          
         """Function takes an existing images from local directory and upload it on aws s3 bucket 
           
@@ -36,7 +36,10 @@ class AWSBoto:
             return url as string
 
         """
-        #s3_client = boto3.client('s3',aws_access_key_id=ACCESS_KEY,aws_secret_access_key=SECRET_KEY)
+        s3_client = boto3.client('s3',
+          aws_access_key_id=ACCESS_KEY,
+          aws_secret_access_key=SECRET_KEY
+        )
         try:
             print("S3_BUCKET_NAME", S3_BUCKET_NAME)
             print("object_name", object_name)
