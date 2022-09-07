@@ -29,4 +29,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/datapipeline_img_jl:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/datapipeline-johnlewis-img1:latest
