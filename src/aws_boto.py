@@ -41,11 +41,8 @@ class AWSBoto:
           aws_secret_access_key=SECRET_KEY
         )
         try:
-            print("S3_BUCKET_NAME", S3_BUCKET_NAME)
-            print("object_name", object_name)
             s3_client.get_object(Bucket=S3_BUCKET_NAME, Key=object_name)
         except:
-            print("upload file on s3")
             s3_client.upload_file(file_name, S3_BUCKET_NAME, object_name)
         
         file_url_to_upload = f's3://{S3_BUCKET_NAME}/{object_name}'
