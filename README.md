@@ -33,9 +33,25 @@ These are Docstring method: In this project I used Numpydoc format.
 Firstly, create an S3 bucket through the AWS console.
 
 Update your code so that as it runs, it uploads your raw JSON data and image data for each record to this S3 bucket using the AWS Python SDK, boto3.
-Upload tabular data to AWS RDS
-Upload any image data to AWS S3
 
+Upload tabular data to AWS RDS.
+
+Upload any image data to AWS S3.
+
+## Milestone 6 - Containerising the scaper and running on AWS EC2 cloud 
+Final stage checked all the test cases are passing.
+Run scaper in headless mode.
+Create docker image which runs a scraper.
+Create EC2 instance and deploy scraper.
+
+## Milestone 7 - Monitoring the scaper using Promethues and Grafana
+Set up a Promethues.yml file to check the system health.
+
+## Milestone 8 - CI/CD Pipeline for docker image
+Setup Docker secret.
+Create Github Action
+Restart the scraper
+make push and check if the docker image build and deployed sucessfully.
 
 
 
