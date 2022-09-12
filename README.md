@@ -29,6 +29,14 @@ These are Docstring method: In this project I used Numpydoc format.
 - [Numpydoc](https://numpydoc.readthedocs.io/en/latest/format.html)
 - [Epytext](https://epytext.readthedocs.io/en/latest/format.html)
 
+## Milestone 5 - Scalabaly store the data
+Firstly, create an S3 bucket through the AWS console.
+
+Update your code so that as it runs, it uploads your raw JSON data and image data for each record to this S3 bucket using the AWS Python SDK, boto3.
+Upload tabular data to AWS RDS
+Upload any image data to AWS S3
+
+
 
 
 
