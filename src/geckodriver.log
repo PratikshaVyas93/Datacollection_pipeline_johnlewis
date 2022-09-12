@@ -982,3 +982,14 @@ JavaScript warning: https://www.johnlewis.com/7gCxO4UAf6ko/gINZYh/P74GkZ/1zLOrGp
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.johnlewis.com."
 JavaScript error: , line 0: uncaught exception: Object
 JavaScript warning: https://www.johnlewis.com/7gCxO4UAf6ko/gINZYh/P74GkZ/1zLOrGpfba/NF0eYBMRMgs/Cj/BNDXY1V1g, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662571541441	Marionette	INFO	Stopped listening on port 61604
+1662571674219	Marionette	INFO	Stopped listening on port 62587
+1662571675536	Marionette	INFO	Stopped listening on port 64352
+1662571676882	Marionette	INFO	Stopped listening on port 63250
+1662571677857	Marionette	INFO	Stopped listening on port 63837
+1662571678819	Marionette	INFO	Stopped listening on port 56511
+1662571679627	Marionette	INFO	Stopped listening on port 56951
+1662571681695	Marionette	INFO	Stopped listening on port 57299
+1662571682886	Marionette	INFO	Stopped listening on port 57839
+1662571685394	Marionette	INFO	Stopped listening on port 59938
+1662571705592	Marionette	INFO	Stopped listening on port 60196
